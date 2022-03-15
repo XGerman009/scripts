@@ -1,0 +1,8 @@
+for i,v in pairs(game.Workspace:GetDescendants()) do
+  if v:IsA("ClickDetector") then
+    fireclickdetector(v)
+  end
+end
+else
+    loadstring(game:HttpGet(('https://raw.githubusercontent.com/XGerman009/scripts/main/ur%20exploit%20not%20support'),true))()
+end

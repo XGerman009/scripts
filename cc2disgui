@@ -3,670 +3,206 @@
 
 -- Instances:
 
-local Human = Instance.new("ScreenGui")
-local Info = Instance.new("Frame")
-local Status = Instance.new("Frame")
-local EnergyS = Instance.new("TextLabel")
-local GlassS = Instance.new("TextLabel")
-local MeltS = Instance.new("TextLabel")
-local Title = Instance.new("TextLabel")
-local Close = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local Timer = Instance.new("Frame")
-local Timer_2 = Instance.new("TextLabel")
-local UICorner_2 = Instance.new("UICorner")
-local infoguiopen = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
-local ControlPad = Instance.new("Frame")
-local Buttons = Instance.new("Frame")
-local StarterEnergy = Instance.new("TextButton")
-local GlassBreaker = Instance.new("TextButton")
-local StarterMeltdown = Instance.new("TextButton")
-local Title_2 = Instance.new("TextLabel")
-local Close_2 = Instance.new("TextButton")
-local UICorner_4 = Instance.new("UICorner")
-local contrpadopen = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
+local Disclaimer = Instance.new("ScreenGui")
+local menu = Instance.new("Frame")
+local launch = Instance.new("TextButton")
+local shit = Instance.new("TextButton")
+local crn = Instance.new("UICorner")
+local Corner = Instance.new("UICorner")
+local Texts = Instance.new("Folder")
+local whatneed = Instance.new("TextLabel")
+local warn = Instance.new("TextLabel")
+local title = Instance.new("TextLabel")
+local Warning = Instance.new("TextLabel")
 
 --Properties:
 
-Human.Name = "Human"
-Human.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-Human.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+Disclaimer.Name = "Disclaimer"
+Disclaimer.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Disclaimer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Info.Name = "Info"
-Info.Parent = Human
-Info.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-Info.BorderSizePixel = 2
-Info.Position = UDim2.new(0.474533528, 0, 0.628085077, 0)
-Info.Size = UDim2.new(0, 254, 0, 145)
+menu.Name = "menu"
+menu.Parent = Disclaimer
+menu.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+menu.BorderSizePixel = 4
+menu.Position = UDim2.new(0.236520857, 0, 0.40936169, 0)
+menu.Size = UDim2.new(0, 200, 0, 174)
 
-Status.Name = "Status"
-Status.Parent = Info
-Status.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-Status.BorderColor3 = Color3.fromRGB(130, 203, 255)
-Status.BorderSizePixel = 2
-Status.Position = UDim2.new(0.0618041009, 0, 0.206896544, 0)
-Status.Size = UDim2.new(0, 225, 0, 101)
+launch.Name = "launch"
+launch.Parent = menu
+launch.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+launch.Position = UDim2.new(0, 0, 0.71158874, 0)
+launch.Size = UDim2.new(0, 200, 0, 50)
+launch.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+launch.Font = Enum.Font.RobotoMono
+launch.Text = "Launch script"
+launch.TextColor3 = Color3.fromRGB(0, 0, 0)
+launch.TextSize = 23.000
 
-EnergyS.Name = "EnergyS"
-EnergyS.Parent = Status
-EnergyS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-EnergyS.BackgroundTransparency = 1.000
-EnergyS.Position = UDim2.new(0.0501464829, 0, 0.128712893, 0)
-EnergyS.Size = UDim2.new(0, 200, 0, 23)
-EnergyS.Font = Enum.Font.Fantasy
-EnergyS.Text = "Energy status: getting info"
-EnergyS.TextColor3 = Color3.fromRGB(255, 255, 255)
-EnergyS.TextSize = 20.000
-EnergyS.TextXAlignment = Enum.TextXAlignment.Left
+shit.Name = "shit"
+shit.Parent = menu
+shit.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+shit.Position = UDim2.new(0.0300002098, 0, 0.0172413588, 0)
+shit.Size = UDim2.new(0, 26, 0, 26)
+shit.Font = Enum.Font.SourceSans
+shit.Text = "X"
+shit.TextColor3 = Color3.fromRGB(255, 255, 255)
+shit.TextSize = 30.000
 
-GlassS.Name = "GlassS"
-GlassS.Parent = Status
-GlassS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GlassS.BackgroundTransparency = 1.000
-GlassS.Position = UDim2.new(0.0501465797, 0, 0.356435657, 0)
-GlassS.Size = UDim2.new(0, 200, 0, 24)
-GlassS.Font = Enum.Font.Fantasy
-GlassS.Text = "Glass status: Unbroken"
-GlassS.TextColor3 = Color3.fromRGB(255, 255, 255)
-GlassS.TextSize = 20.000
-GlassS.TextXAlignment = Enum.TextXAlignment.Left
+crn.Name = "crn"
+crn.Parent = shit
 
-MeltS.Name = "MeltS"
-MeltS.Parent = Status
-MeltS.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-MeltS.BackgroundTransparency = 1.000
-MeltS.Position = UDim2.new(0.0501463413, 0, 0.585042477, 0)
-MeltS.Size = UDim2.new(0, 200, 0, 28)
-MeltS.Font = Enum.Font.Fantasy
-MeltS.Text = "Meltdown status: Unactive"
-MeltS.TextColor3 = Color3.fromRGB(255, 255, 255)
-MeltS.TextSize = 20.000
-MeltS.TextXAlignment = Enum.TextXAlignment.Left
+Corner.Name = "Corner"
+Corner.Parent = menu
 
-Title.Name = "Title"
-Title.Parent = Info
-Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title.BackgroundTransparency = 1.000
-Title.Position = UDim2.new(0.114435673, 0, -0.0965517312, 0)
-Title.Size = UDim2.new(0, 200, 0, 50)
-Title.Font = Enum.Font.SourceSans
-Title.Text = "By pizza_man#7693"
-Title.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title.TextSize = 19.000
+Texts.Name = "Texts"
+Texts.Parent = menu
 
-Close.Name = "Close"
-Close.Parent = Info
-Close.BackgroundColor3 = Color3.fromRGB(68, 255, 0)
-Close.Position = UDim2.new(0.0236220472, 0, 0.0137931034, 0)
-Close.Size = UDim2.new(0, 20, 0, 20)
-Close.Font = Enum.Font.SourceSans
-Close.Text = "-"
-Close.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close.TextSize = 44.000
+whatneed.Name = "whatneed"
+whatneed.Parent = Texts
+whatneed.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+whatneed.BackgroundTransparency = 1.000
+whatneed.Position = UDim2.new(0.0799999908, 0, 0.431034476, 0)
+whatneed.Size = UDim2.new(0, 168, 0, 49)
+whatneed.Font = Enum.Font.GothamBold
+whatneed.Text = "fireclickdetector()"
+whatneed.TextColor3 = Color3.fromRGB(255, 255, 255)
+whatneed.TextSize = 12.000
 
-UICorner.Parent = Close
+warn.Name = "warn"
+warn.Parent = Texts
+warn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+warn.BackgroundTransparency = 1.000
+warn.Position = UDim2.new(0.0649999976, 0, 0.330879509, 0)
+warn.Size = UDim2.new(0, 168, 0, 49)
+warn.Font = Enum.Font.GothamBold
+warn.Text = "- Your exploit must to support:"
+warn.TextColor3 = Color3.fromRGB(255, 255, 255)
+warn.TextSize = 12.000
 
-Timer.Name = "Timer"
-Timer.Parent = Info
-Timer.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-Timer.BorderSizePixel = 3
-Timer.Position = UDim2.new(0.0532735959, 0, 1.09358752, 0)
-Timer.Size = UDim2.new(0, 225, 0, 35)
+title.Name = "title"
+title.Parent = Texts
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.159999996, 0, 0, 0)
+title.Size = UDim2.new(0, 168, 0, 32)
+title.Font = Enum.Font.GothamBold
+title.Text = "By pizza_man#7693"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 14.000
 
-Timer_2.Name = "Timer"
-Timer_2.Parent = Timer
-Timer_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Timer_2.BackgroundTransparency = 1.000
-Timer_2.Position = UDim2.new(0.0212575961, 0, 0.192687988, 0)
-Timer_2.Size = UDim2.new(0, 215, 0, 20)
-Timer_2.Font = Enum.Font.Fantasy
-Timer_2.Text = "Time left: null"
-Timer_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Timer_2.TextSize = 20.000
-
-UICorner_2.Parent = Timer
-
-infoguiopen.Name = "infoguiopen"
-infoguiopen.Parent = Human
-infoguiopen.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-infoguiopen.BorderSizePixel = 3
-infoguiopen.Position = UDim2.new(0.910237014, 0, 0.636595726, 0)
-infoguiopen.Size = UDim2.new(0, 126, 0, 50)
-infoguiopen.Font = Enum.Font.SourceSans
-infoguiopen.Text = "Open Status gui"
-infoguiopen.TextColor3 = Color3.fromRGB(255, 255, 255)
-infoguiopen.TextSize = 15.000
-
-UICorner_3.Parent = infoguiopen
-
-ControlPad.Name = "ControlPad"
-ControlPad.Parent = Human
-ControlPad.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-ControlPad.BorderSizePixel = 2
-ControlPad.Position = UDim2.new(0.624306619, 0, 0.627234042, 0)
-ControlPad.Size = UDim2.new(0, 125, 0, 145)
-
-Buttons.Name = "Buttons"
-Buttons.Parent = ControlPad
-Buttons.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-Buttons.BorderSizePixel = 2
-Buttons.Position = UDim2.new(0.0723066404, 0, 0.213792682, 0)
-Buttons.Size = UDim2.new(0, 107, 0, 109)
-
-StarterEnergy.Name = "StarterEnergy"
-StarterEnergy.Parent = Buttons
-StarterEnergy.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
-StarterEnergy.Size = UDim2.new(0, 107, 0, 36)
-StarterEnergy.Font = Enum.Font.Code
-StarterEnergy.Text = "Enable core"
-StarterEnergy.TextColor3 = Color3.fromRGB(255, 255, 255)
-StarterEnergy.TextSize = 17.000
-
-GlassBreaker.Name = "GlassBreaker"
-GlassBreaker.Parent = Buttons
-GlassBreaker.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
-GlassBreaker.Position = UDim2.new(0, 0, 0.330275238, 0)
-GlassBreaker.Size = UDim2.new(0, 107, 0, 36)
-GlassBreaker.Font = Enum.Font.Code
-GlassBreaker.Text = "Break glass"
-GlassBreaker.TextColor3 = Color3.fromRGB(255, 255, 255)
-GlassBreaker.TextSize = 17.000
-
-StarterMeltdown.Name = "StarterMeltdown"
-StarterMeltdown.Parent = Buttons
-StarterMeltdown.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
-StarterMeltdown.Position = UDim2.new(0, 0, 0.660550475, 0)
-StarterMeltdown.Size = UDim2.new(0, 107, 0, 36)
-StarterMeltdown.Font = Enum.Font.Code
-StarterMeltdown.Text = "Do meltdown"
-StarterMeltdown.TextColor3 = Color3.fromRGB(255, 255, 255)
-StarterMeltdown.TextSize = 17.000
-
-Title_2.Name = "Title"
-Title_2.Parent = ControlPad
-Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Title_2.BackgroundTransparency = 1.000
-Title_2.Position = UDim2.new(-0.197564334, 0, -0.0965517312, 0)
-Title_2.Size = UDim2.new(0, 200, 0, 50)
-Title_2.Font = Enum.Font.SourceSans
-Title_2.Text = "By pizza_man#7693"
-Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-Title_2.TextSize = 14.000
-
-Close_2.Name = "Close"
-Close_2.Parent = ControlPad
-Close_2.BackgroundColor3 = Color3.fromRGB(68, 255, 0)
-Close_2.Position = UDim2.new(0.0236220472, 0, 0.0137931034, 0)
-Close_2.Size = UDim2.new(0, 20, 0, 20)
-Close_2.Font = Enum.Font.SourceSans
-Close_2.Text = "-"
-Close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-Close_2.TextSize = 44.000
-
-UICorner_4.Parent = Close_2
-
-contrpadopen.Name = "contrpadopen"
-contrpadopen.Parent = Human
-contrpadopen.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-contrpadopen.BorderSizePixel = 3
-contrpadopen.Position = UDim2.new(0.910237014, 0, 0.59404254, 0)
-contrpadopen.Size = UDim2.new(0, 126, 0, 50)
-contrpadopen.Font = Enum.Font.SourceSans
-contrpadopen.Text = "Open Buttons gui"
-contrpadopen.TextColor3 = Color3.fromRGB(255, 255, 255)
-contrpadopen.TextSize = 15.000
-
-UICorner_5.Parent = contrpadopen
+Warning.Name = "Warning"
+Warning.Parent = Texts
+Warning.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Warning.BackgroundTransparency = 1.000
+Warning.Position = UDim2.new(0.0519148968, 0, 0.146050155, 0)
+Warning.Size = UDim2.new(0, 188, 0, 50)
+Warning.Font = Enum.Font.Arcade
+Warning.Text = "Warning!"
+Warning.TextColor3 = Color3.fromRGB(255, 0, 4)
+Warning.TextSize = 41.000
 
 -- Scripts:
 
-local function DPWAPL_fake_script() -- Close.closeinfo 
-	local script = Instance.new('LocalScript', Close)
+local function UTYOPG_fake_script() -- launch.run 
+	local script = Instance.new('LocalScript', launch)
 
-	local frame2 = script.Parent.Parent.Parent.Info
-	local open2 = script.Parent.Parent.Parent.infoguiopen
+	local destroyshit = script.Parent.Parent.Parent.Parent.Disclaimer
+	local warnwhatneed = script.Parent.Parent.Texts.whatneed
+	local buttontext = script.Parent.Parent.launch
+	local function notifi()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "V3rmillion";
+			Text = "Please wait, setting up script...";
+			Duration = 5;
+		})
+	end
+	local function errnotif()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "V3rmillion";
+			Text = "You have unsupportable exploit.";
+			Duration = 5;
+		})
+	end
 	
 	script.Parent.MouseButton1Click:Connect(function()
-		frame2.Visible = false
-		open2.Visible = true
+		if is_synapse_function or syn then
+			print("Your exploit supports script. Running...")
+			warnwhatneed.Text = "Your exploit support script!"
+			wait(3)
+			destroyshit.Visible = false
+			wait(1)
+			notifi()
+			loadstring(game:HttpGet(('https://raw.githubusercontent.com/XGerman009/scripts/main/cc2infogui'),true))()
+		else
+			print("Your exploit not support script.")
+			warnwhatneed.Text = "Sorry! Your exploit not support script."
+			notifi()
+		end
 	end)
 end
-coroutine.wrap(DPWAPL_fake_script)()
-local function FQKCY_fake_script() -- Timer_2.Copier 
-	local script = Instance.new('LocalScript', Timer_2)
+coroutine.wrap(UTYOPG_fake_script)()
+local function ENOC_fake_script() -- shit.shit 
+	local script = Instance.new('LocalScript', shit)
 
-	local timefromgame = game:GetService("Workspace").EnergyCore.ControlRoom.Screens.Energy.UI.Frame.Time
-	local timetogui = script.Parent.Parent.Timer
+	local button = script.Parent
+	local hide = script.Parent.Parent.Parent.menu
+	
+	button.Activated:Connect(function()
+		hide.Visible = false
+	end)
+end
+coroutine.wrap(ENOC_fake_script)()
+local function QFXKZCF_fake_script() -- menu.Move 
+	local script = Instance.new('LocalScript', menu)
+
+	local UIS = game:GetService('UserInputService')
+	local frame = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.50
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	frame.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = frame.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(QFXKZCF_fake_script)()
+local function FXMK_fake_script() -- Warning.wtf 
+	local script = Instance.new('LocalScript', Warning)
+
+	local rainbow = script.Parent.Parent.Warning
 	
 	repeat
-		timefromgame.Text = timetogui.Text
-		wait(5)
+		for hue = 0, 255, 4 do
+			rainbow.TextColor3 = Color3.fromHSV(hue/256, 1, 1)
+			wait(0.2)
+		end
 	until false
-end
-coroutine.wrap(FQKCY_fake_script)()
-local function CHQUCVP_fake_script() -- Info.Move 
-	local script = Instance.new('LocalScript', Info)
-
-	local UIS = game:GetService('UserInputService')
-	
-	local frame = script.Parent
-	
-	
-	
-	local dragToggle = nil
-	
-	local dragSpeed = 0.50
-	
-	local dragStart = nil
-	
-	local startPos = nil
-	
-	
-	
-	local function updateInput(input)
-	
-		local delta = input.Position - dragStart
-	
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-	
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	
-	end
-	
-	
-	
-	frame.InputBegan:Connect(function(input)
-	
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-	
-			dragToggle = true
-	
-			dragStart = input.Position
-	
-			startPos = frame.Position
-	
-			input.Changed:Connect(function()
-	
-				if input.UserInputState == Enum.UserInputState.End then
-	
-					dragToggle = false
-	
-				end
-	
-			end)
-	
-		end
-	
-	end)
-	
-	
-	
-	UIS.InputChanged:Connect(function(input)
-	
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	
-			if dragToggle then
-	
-				updateInput(input)
-	
-			end
-	
-		end
-	
-	end)
-end
-coroutine.wrap(CHQUCVP_fake_script)()
-local function VUNX_fake_script() -- Info.Checker 
-	local script = Instance.new('LocalScript', Info)
-
-	local ec = game:GetService("Workspace").EnergyCore.ControlRoom.Screens.Energy.UI.Frame.Status
-	local fs = game:GetService("Workspace").EnergyCore.ControlRoom.Screens.Energy.UI.Frame.Power
-	local es = script.Parent.Status.EnergyS
-	
-	wait(3)
-	if ec.Text == "FILLING" then
-		es.Text = "Energy status: Filling"
-		print("DEBUG: Detected the energy filling right now")
-		print("DEBUG: Changed the es")
-	end
-	if ec.Text == "NOT FILLING" then
-		es.Text = "Energy status: Not filling"
-		print("DEBUG: Detected the energy not filling right now")
-		print("DEBUG: Changed the es")
-	end
-	if fs.Text == "25000/25000 MWh" then
-		es.Text = "Energy status: Full"
-		print("DEBUG: Detected the energy full right now")
-		print("DEBUG: Changed the es")
-	end
-end
-coroutine.wrap(VUNX_fake_script)()
-local function GYIQSF_fake_script() -- Info.RainbowA 
-	local script = Instance.new('LocalScript', Info)
-
-	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
-	
-	counter = 0
-	
-	while wait(0.1)do
-		script.Parent.Status.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
-		script.Parent.Timer.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
-		script.Parent.Parent.Info.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
-		script.Parent.Parent.ControlPad.Buttons.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
-		script.Parent.Parent.ControlPad.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
-		counter = counter + 0.01
-	end
-end
-coroutine.wrap(GYIQSF_fake_script)()
-local function AIGTI_fake_script() -- Human.hidebuttons 
-	local script = Instance.new('LocalScript', Human)
-
-	local a = script.Parent.contrpadopen
-	local b = script.Parent.infoguiopen
-	
-	a.Visible = false
-	b.Visible = false
-	
 	
 end
-coroutine.wrap(AIGTI_fake_script)()
-local function ZOBVEA_fake_script() -- infoguiopen.openinfo 
-	local script = Instance.new('LocalScript', infoguiopen)
-
-	local frame3 = script.Parent.Parent.Info
-	local a3 = script.Parent.Parent.infoguiopen
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		frame3.Visible = true
-		a3.Visible = false
-	end)
-	
-end
-coroutine.wrap(ZOBVEA_fake_script)()
-local function RJKDGFG_fake_script() -- StarterEnergy.startenergy 
-	local script = Instance.new('LocalScript', StarterEnergy)
-
-	local button = script.Parent.Parent.StarterEnergy
-	local text3 = script.Parent.Parent.Parent.Parent.Info.Status.EnergyS
-	local a = game:GetService("Workspace").EnergyCore.ControlRoom.Enable.ClickDetector
-	local time = script.Parent.Parent.Parent.Parent.Info.Timer.Timer
-	local hi = Instance.new("Sound")
-	local did = Instance.new("Sound")
-	local errorenergy = Instance.new("Sound")
-	
-	hi.Name = "Sound"
-	hi.SoundId = "http://www.roblox.com/asset/?id=9062843158"
-	hi.Volume = 0.5
-	hi.Looped = false
-	hi.archivable = false
-	hi.Parent = game.Workspace
-	
-	did.Name = "Sound"
-	did.SoundId = "http://www.roblox.com/asset/?id=9068813222"
-	did.Volume = 0.5
-	did.Looped = false
-	did.archivable = false
-	did.Parent = game.Workspace
-	
-	errorenergy.Name = "Sound"
-	errorenergy.SoundId = "http://www.roblox.com/asset/?id=2865228021"
-	errorenergy.Volume = 1.5
-	errorenergy.Looped = false
-	errorenergy.archivable = false
-	errorenergy.Parent = game.Workspace
-	
-	local function onButtonActivated()
-		if text3.Text == "Energy Status: Filling" or text3.Text == "Energy Status: Full" then
-			errorenergy:Play()
-			print("DEBUG: Detected the user trying to click to re-fill the energy core, but core already filled or filling on this moment.")
-		else
-			hi:Play()
-			text3.Text = "Energy Status: Filling"
-			time.Text = "Time left: 20 minutes"
-			fireclickdetector(a)
-			print("Fireclicked energy!")
-			wait(60)
-			time.Text = "Time left: 19 minutes"
-			wait(60)
-			time.Text = "Time left: 17 minutes"
-			wait(60)
-			time.Text = "Time left: 16 minutes"
-			wait(60)
-			time.Text = "Time left: 15 minutes"
-			wait(60)
-			time.Text = "Time left: 14 minutes"
-			wait(60)
-			time.Text = "Time left: 13 minutes"
-			wait(60)
-			time.Text = "Time left: 12 minutes"
-			wait(60)
-			time.Text = "Time left: 11 minutes"
-			wait(60)
-			time.Text = "Time left: 10 minutes"
-			wait(60)
-			time.Text = "Time left: 9 minutes"
-			wait(60)
-			time.Text = "Time left: 8 minutes"
-			wait(60)
-			time.Text = "Time left: 7 minutes"
-			wait(60)
-			time.Text = "Time left: 6 minutes"
-			wait(60)
-			time.Text = "Time left: 5 minutes"
-			wait(60)
-			time.Text = "Time left: 4 minutes"
-			wait(60)
-			time.Text = "Time left: 3 minutes"
-			wait(60)
-			time.Text = "Time left: 2 minutes"
-			wait(60)
-			time.Text = "Time left: 1 minutes"
-			wait(60)
-			time.Text = "Time left: 0 minutes"
-			wait(60)
-			time.Text = "Times left"
-			did:Play()
-			print("DEBUG: Detected the energy core was filled up. Waiting from user...")
-			text3.Text = "Energy Status: Full"
-		end
-	end
-	
-	button.Activated:Connect(onButtonActivated)
-end
-coroutine.wrap(RJKDGFG_fake_script)()
-local function IZHK_fake_script() -- GlassBreaker.glassbreak 
-	local script = Instance.new('LocalScript', GlassBreaker)
-
-	local button = script.Parent.Parent.GlassBreaker
-	local text4 = script.Parent.Parent.Parent.Parent.Info.Status.GlassS
-	local b = game:GetService("Workspace").EnergyCore.ControlRoom.Glass.ClickDetector
-	local glass = Instance.new("Sound")
-	local errorglass = Instance.New("Sound")
-	
-	glass.Name = "Sound"
-	glass.SoundId = "http://www.roblox.com/asset/?id=2596202821"
-	glass.Volume = 0.4
-	glass.Looped = false
-	glass.archivable = false
-	glass.Parent = game.Workspace
-	
-	errorglass.Name = "Sound"
-	errorglass.SoundId = "http://www.roblox.com/asset/?id=2865228021"
-	errorglass.Volume = 1.5
-	errorglass.Looped = false
-	errorglass.archivable = false
-	errorglass.Parent = game.Workspace
-	
-	local function onButtonActivated()
-		if text4.Text == "Glass status: Unbroken" then
-			glass:Play()
-			text4.Text = "Glass status: Broken"
-			fireclickdetector(b)
-			print("DEBUG: Detected click to GLASS")
-			print("DEBUG: Fireclickdetector'ed glass")
-			print("DEBUG: Detected the glass broken")
-			wait(60)
-			print("DEBUG: Detected glass respawned")
-			text4.Text = "Glass status: Unbroken"
-		else
-			errorglass:Play()
-		end
-	end
-	
-	button.Activated:Connect(onButtonActivated)
-end
-coroutine.wrap(IZHK_fake_script)()
-local function TRHM_fake_script() -- StarterMeltdown.startmelt 
-	local script = Instance.new('LocalScript', StarterMeltdown)
-
-	local button = script.Parent.Parent.StarterMeltdown
-	local text2 = script.Parent.Parent.Parent.Parent.Info.Status.MeltS
-	local c = game:GetService("Workspace").EnergyCore.ControlRoom.SelfDestruct.ClickDetector
-	local es = script.Parent.Parent.Parent.Parent.Info.Status.EnergyS
-	local ok = Instance.new("Sound")
-	local errormelt = Instance.new("Sound")
-	
-	ok.Name = "Sound"
-	ok.SoundId = "http://www.roblox.com/asset/?id=9062843158"
-	ok.Volume = 0.5
-	ok.Looped = false
-	ok.archivable = false
-	ok.Parent = game.Workspace
-	
-	errormelt.Name = "Sound"
-	errormelt.SoundId = "http://www.roblox.com/asset/?id=2865228021"
-	errormelt.Volume = 1.5
-	errormelt.Looped = false
-	errormelt.archivable = false
-	errormelt.Parent = game.Workspace
-	
-	local function onButtonActivated()
-		if es.Text == "Energy Status: Full" then
-			ok:Play()
-			text2.Text = "Meltdown status: Active"
-			fireclickdetector(c)
-			print("DEBUG: Detected click to MELTDOWN")
-			print("DEBUG: Fireclickdetector'ed meltdown")
-			wait(135)
-			text2.Text = "Meltdown status: Unactive"
-		else
-			errormelt:Play()
-		end
-	end
-	
-	button.Activated:Connect(onButtonActivated)
-end
-coroutine.wrap(TRHM_fake_script)()
-local function OWGEFX_fake_script() -- ControlPad.Move 
-	local script = Instance.new('LocalScript', ControlPad)
-
-	local UIS = game:GetService('UserInputService')
-	
-	local frame = script.Parent
-	
-	
-	
-	local dragToggle = nil
-	
-	local dragSpeed = 0.50
-	
-	local dragStart = nil
-	
-	local startPos = nil
-	
-	
-	
-	local function updateInput(input)
-	
-		local delta = input.Position - dragStart
-	
-		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
-	
-			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
-	
-		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
-	
-	end
-	
-	
-	
-	frame.InputBegan:Connect(function(input)
-	
-		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
-	
-			dragToggle = true
-	
-			dragStart = input.Position
-	
-			startPos = frame.Position
-	
-			input.Changed:Connect(function()
-	
-				if input.UserInputState == Enum.UserInputState.End then
-	
-					dragToggle = false
-	
-				end
-	
-			end)
-	
-		end
-	
-	end)
-	
-	
-	
-	UIS.InputChanged:Connect(function(input)
-	
-		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
-	
-			if dragToggle then
-	
-				updateInput(input)
-	
-			end
-	
-		end
-	
-	end)
-end
-coroutine.wrap(OWGEFX_fake_script)()
-local function OOSA_fake_script() -- Close_2.closepad 
-	local script = Instance.new('LocalScript', Close_2)
-
-	local frame = script.Parent.Parent.Parent.ControlPad
-	local open = script.Parent.Parent.Parent.contrpadopen
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		frame.Visible = false
-		open.Visible = true
-	end)
-end
-coroutine.wrap(OOSA_fake_script)()
-local function CZWYI_fake_script() -- contrpadopen.openpad 
-	local script = Instance.new('LocalScript', contrpadopen)
-
-	local a2 = script.Parent.Parent.ControlPad
-	local b2 = script.Parent.Parent.contrpadopen
-	
-	script.Parent.MouseButton1Click:Connect(function()
-		a2.Visible = true	
-		b2.Visible = false
-	end)
-end
-coroutine.wrap(CZWYI_fake_script)()
-local function SDEVZW_fake_script() -- Human.info 
-	local script = Instance.new('LocalScript', Human)
-
-	wait(1)
-	game.StarterGui:SetCore("SendNotification", {
-		Title = "V3rmillion";
-		Text = "Please wait, setting up script...";
-		Duration = 5;
-	})
-end
-coroutine.wrap(SDEVZW_fake_script)()
+coroutine.wrap(FXMK_fake_script)()

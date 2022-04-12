@@ -39,7 +39,7 @@ Info.Parent = Human
 Info.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
 Info.BorderSizePixel = 2
 Info.Position = UDim2.new(0.474533528, 0, 0.628085077, 0)
-Info.Size = UDim2.new(0, 254, 0, 145)a
+Info.Size = UDim2.new(0, 254, 0, 145)
 
 Status.Name = "Status"
 Status.Parent = Info

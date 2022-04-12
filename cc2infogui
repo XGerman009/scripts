@@ -9,26 +9,24 @@ local Status = Instance.new("Frame")
 local EnergyS = Instance.new("TextLabel")
 local GlassS = Instance.new("TextLabel")
 local MeltS = Instance.new("TextLabel")
-local UICorner = Instance.new("UICorner")
 local Title = Instance.new("TextLabel")
 local Close = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
+local UICorner = Instance.new("UICorner")
 local Timer = Instance.new("Frame")
 local Timer_2 = Instance.new("TextLabel")
-local UICorner_3 = Instance.new("UICorner")
-local UICorner_4 = Instance.new("UICorner")
+local UICorner_2 = Instance.new("UICorner")
 local infoguiopen = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
 local ControlPad = Instance.new("Frame")
 local Buttons = Instance.new("Frame")
 local StarterEnergy = Instance.new("TextButton")
 local GlassBreaker = Instance.new("TextButton")
 local StarterMeltdown = Instance.new("TextButton")
-local UICorner_5 = Instance.new("UICorner")
 local Title_2 = Instance.new("TextLabel")
-local UICorner_6 = Instance.new("UICorner")
 local Close_2 = Instance.new("TextButton")
-local UICorner_7 = Instance.new("UICorner")
+local UICorner_4 = Instance.new("UICorner")
 local contrpadopen = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
 
 --Properties:
 
@@ -41,13 +39,13 @@ Info.Parent = Human
 Info.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
 Info.BorderSizePixel = 2
 Info.Position = UDim2.new(0.474533528, 0, 0.628085077, 0)
-Info.Size = UDim2.new(0, 254, 0, 145)
+Info.Size = UDim2.new(0, 254, 0, 145)a
 
 Status.Name = "Status"
 Status.Parent = Info
 Status.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
 Status.BorderColor3 = Color3.fromRGB(130, 203, 255)
-Status.BorderSizePixel = 4
+Status.BorderSizePixel = 2
 Status.Position = UDim2.new(0.0618041009, 0, 0.206896544, 0)
 Status.Size = UDim2.new(0, 225, 0, 101)
 
@@ -87,9 +85,6 @@ MeltS.TextColor3 = Color3.fromRGB(255, 255, 255)
 MeltS.TextSize = 20.000
 MeltS.TextXAlignment = Enum.TextXAlignment.Left
 
-UICorner.CornerRadius = UDim.new(0, 10)
-UICorner.Parent = Status
-
 Title.Name = "Title"
 Title.Parent = Info
 Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -111,7 +106,7 @@ Close.Text = "-"
 Close.TextColor3 = Color3.fromRGB(0, 0, 0)
 Close.TextSize = 44.000
 
-UICorner_2.Parent = Close
+UICorner.Parent = Close
 
 Timer.Name = "Timer"
 Timer.Parent = Info
@@ -131,9 +126,7 @@ Timer_2.Text = "Time left: null"
 Timer_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Timer_2.TextSize = 20.000
 
-UICorner_3.Parent = Timer
-
-UICorner_4.Parent = Info
+UICorner_2.Parent = Timer
 
 infoguiopen.Name = "infoguiopen"
 infoguiopen.Parent = Human
@@ -146,6 +139,8 @@ infoguiopen.Text = "Open Status gui"
 infoguiopen.TextColor3 = Color3.fromRGB(255, 255, 255)
 infoguiopen.TextSize = 15.000
 
+UICorner_3.Parent = infoguiopen
+
 ControlPad.Name = "ControlPad"
 ControlPad.Parent = Human
 ControlPad.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
@@ -156,7 +151,7 @@ ControlPad.Size = UDim2.new(0, 125, 0, 145)
 Buttons.Name = "Buttons"
 Buttons.Parent = ControlPad
 Buttons.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
-Buttons.BorderSizePixel = 4
+Buttons.BorderSizePixel = 2
 Buttons.Position = UDim2.new(0.0723066404, 0, 0.213792682, 0)
 Buttons.Size = UDim2.new(0, 107, 0, 109)
 
@@ -166,7 +161,7 @@ StarterEnergy.BackgroundColor3 = Color3.fromRGB(89, 89, 89)
 StarterEnergy.Size = UDim2.new(0, 107, 0, 36)
 StarterEnergy.Font = Enum.Font.Code
 StarterEnergy.Text = "Enable core"
-StarterEnergy.TextColor3 = Color3.fromRGB(0, 0, 0)
+StarterEnergy.TextColor3 = Color3.fromRGB(255, 255, 255)
 StarterEnergy.TextSize = 17.000
 
 GlassBreaker.Name = "GlassBreaker"
@@ -176,7 +171,7 @@ GlassBreaker.Position = UDim2.new(0, 0, 0.330275238, 0)
 GlassBreaker.Size = UDim2.new(0, 107, 0, 36)
 GlassBreaker.Font = Enum.Font.Code
 GlassBreaker.Text = "Break glass"
-GlassBreaker.TextColor3 = Color3.fromRGB(0, 0, 0)
+GlassBreaker.TextColor3 = Color3.fromRGB(255, 255, 255)
 GlassBreaker.TextSize = 17.000
 
 StarterMeltdown.Name = "StarterMeltdown"
@@ -186,10 +181,8 @@ StarterMeltdown.Position = UDim2.new(0, 0, 0.660550475, 0)
 StarterMeltdown.Size = UDim2.new(0, 107, 0, 36)
 StarterMeltdown.Font = Enum.Font.Code
 StarterMeltdown.Text = "Do meltdown"
-StarterMeltdown.TextColor3 = Color3.fromRGB(0, 0, 0)
+StarterMeltdown.TextColor3 = Color3.fromRGB(255, 255, 255)
 StarterMeltdown.TextSize = 17.000
-
-UICorner_5.Parent = Buttons
 
 Title_2.Name = "Title"
 Title_2.Parent = ControlPad
@@ -202,8 +195,6 @@ Title_2.Text = "By pizza_man#7693"
 Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 Title_2.TextSize = 14.000
 
-UICorner_6.Parent = ControlPad
-
 Close_2.Name = "Close"
 Close_2.Parent = ControlPad
 Close_2.BackgroundColor3 = Color3.fromRGB(68, 255, 0)
@@ -214,7 +205,7 @@ Close_2.Text = "-"
 Close_2.TextColor3 = Color3.fromRGB(0, 0, 0)
 Close_2.TextSize = 44.000
 
-UICorner_7.Parent = Close_2
+UICorner_4.Parent = Close_2
 
 contrpadopen.Name = "contrpadopen"
 contrpadopen.Parent = Human
@@ -227,9 +218,11 @@ contrpadopen.Text = "Open Buttons gui"
 contrpadopen.TextColor3 = Color3.fromRGB(255, 255, 255)
 contrpadopen.TextSize = 15.000
 
+UICorner_5.Parent = contrpadopen
+
 -- Scripts:
 
-local function PQVVLHF_fake_script() -- Close.closeinfo 
+local function DPWAPL_fake_script() -- Close.closeinfo 
 	local script = Instance.new('LocalScript', Close)
 
 	local frame2 = script.Parent.Parent.Parent.Info
@@ -240,8 +233,20 @@ local function PQVVLHF_fake_script() -- Close.closeinfo
 		open2.Visible = true
 	end)
 end
-coroutine.wrap(PQVVLHF_fake_script)()
-local function IXQECE_fake_script() -- Info.Move 
+coroutine.wrap(DPWAPL_fake_script)()
+local function FQKCY_fake_script() -- Timer_2.Copier 
+	local script = Instance.new('LocalScript', Timer_2)
+
+	local timefromgame = game:GetService("Workspace").EnergyCore.ControlRoom.Screens.Energy.UI.Frame.Time
+	local timetogui = script.Parent.Parent.Timer
+	
+	repeat
+		timefromgame.Text = timetogui.Text
+		wait(5)
+	until false
+end
+coroutine.wrap(FQKCY_fake_script)()
+local function CHQUCVP_fake_script() -- Info.Move 
 	local script = Instance.new('LocalScript', Info)
 
 	local UIS = game:GetService('UserInputService')
@@ -314,8 +319,8 @@ local function IXQECE_fake_script() -- Info.Move
 	
 	end)
 end
-coroutine.wrap(IXQECE_fake_script)()
-local function QYQKCI_fake_script() -- Info.Checker 
+coroutine.wrap(CHQUCVP_fake_script)()
+local function VUNX_fake_script() -- Info.Checker 
 	local script = Instance.new('LocalScript', Info)
 
 	local ec = game:GetService("Workspace").EnergyCore.ControlRoom.Screens.Energy.UI.Frame.Status
@@ -339,8 +344,8 @@ local function QYQKCI_fake_script() -- Info.Checker
 		print("DEBUG: Changed the es")
 	end
 end
-coroutine.wrap(QYQKCI_fake_script)()
-local function AAMBQP_fake_script() -- Info.RainbowA 
+coroutine.wrap(VUNX_fake_script)()
+local function GYIQSF_fake_script() -- Info.RainbowA 
 	local script = Instance.new('LocalScript', Info)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
@@ -348,16 +353,16 @@ local function AAMBQP_fake_script() -- Info.RainbowA
 	counter = 0
 	
 	while wait(0.1)do
-		script.Parent.Status.UIStroke.Color = Color3.fromHSV(zigzag(counter),1,1)
-		script.Parent.Timer.UIStroke.Color = Color3.fromHSV(zigzag(counter),1,1)
-		script.Parent.UIStroke.Color = Color3.fromHSV(zigzag(counter),1,1)
-		script.Parent.Parent.ControlPad.UIStroke.Color = Color3.fromHSV(zigzag(counter),1,1)
-		script.Parent.Parent.ControlPad.Buttons.UIStroke.Color = Color3.fromHSV(zigzag(counter),1,1)
+		script.Parent.Status.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		script.Parent.Timer.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		script.Parent.Parent.Info.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		script.Parent.Parent.ControlPad.Buttons.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
+		script.Parent.Parent.ControlPad.BorderColor3 = Color3.fromHSV(zigzag(counter),1,1)
 		counter = counter + 0.01
 	end
 end
-coroutine.wrap(AAMBQP_fake_script)()
-local function VZGFS_fake_script() -- Human.hidebuttons 
+coroutine.wrap(GYIQSF_fake_script)()
+local function AIGTI_fake_script() -- Human.hidebuttons 
 	local script = Instance.new('LocalScript', Human)
 
 	local a = script.Parent.contrpadopen
@@ -368,8 +373,8 @@ local function VZGFS_fake_script() -- Human.hidebuttons
 	
 	
 end
-coroutine.wrap(VZGFS_fake_script)()
-local function OYNGPPB_fake_script() -- infoguiopen.openinfo 
+coroutine.wrap(AIGTI_fake_script)()
+local function ZOBVEA_fake_script() -- infoguiopen.openinfo 
 	local script = Instance.new('LocalScript', infoguiopen)
 
 	local frame3 = script.Parent.Parent.Info
@@ -381,8 +386,8 @@ local function OYNGPPB_fake_script() -- infoguiopen.openinfo
 	end)
 	
 end
-coroutine.wrap(OYNGPPB_fake_script)()
-local function SMAUCG_fake_script() -- StarterEnergy.startenergy 
+coroutine.wrap(ZOBVEA_fake_script)()
+local function RJKDGFG_fake_script() -- StarterEnergy.startenergy 
 	local script = Instance.new('LocalScript', StarterEnergy)
 
 	local button = script.Parent.Parent.StarterEnergy
@@ -472,8 +477,8 @@ local function SMAUCG_fake_script() -- StarterEnergy.startenergy
 	
 	button.Activated:Connect(onButtonActivated)
 end
-coroutine.wrap(SMAUCG_fake_script)()
-local function RTSLPI_fake_script() -- GlassBreaker.glassbreak 
+coroutine.wrap(RJKDGFG_fake_script)()
+local function IZHK_fake_script() -- GlassBreaker.glassbreak 
 	local script = Instance.new('LocalScript', GlassBreaker)
 
 	local button = script.Parent.Parent.GlassBreaker
@@ -514,8 +519,8 @@ local function RTSLPI_fake_script() -- GlassBreaker.glassbreak
 	
 	button.Activated:Connect(onButtonActivated)
 end
-coroutine.wrap(RTSLPI_fake_script)()
-local function KEXOT_fake_script() -- StarterMeltdown.startmelt 
+coroutine.wrap(IZHK_fake_script)()
+local function TRHM_fake_script() -- StarterMeltdown.startmelt 
 	local script = Instance.new('LocalScript', StarterMeltdown)
 
 	local button = script.Parent.Parent.StarterMeltdown
@@ -555,8 +560,8 @@ local function KEXOT_fake_script() -- StarterMeltdown.startmelt
 	
 	button.Activated:Connect(onButtonActivated)
 end
-coroutine.wrap(KEXOT_fake_script)()
-local function CRGX_fake_script() -- ControlPad.Move 
+coroutine.wrap(TRHM_fake_script)()
+local function OWGEFX_fake_script() -- ControlPad.Move 
 	local script = Instance.new('LocalScript', ControlPad)
 
 	local UIS = game:GetService('UserInputService')
@@ -629,8 +634,8 @@ local function CRGX_fake_script() -- ControlPad.Move
 	
 	end)
 end
-coroutine.wrap(CRGX_fake_script)()
-local function YHKWKOW_fake_script() -- Close_2.closepad 
+coroutine.wrap(OWGEFX_fake_script)()
+local function OOSA_fake_script() -- Close_2.closepad 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local frame = script.Parent.Parent.Parent.ControlPad
@@ -641,8 +646,8 @@ local function YHKWKOW_fake_script() -- Close_2.closepad
 		open.Visible = true
 	end)
 end
-coroutine.wrap(YHKWKOW_fake_script)()
-local function PAGSN_fake_script() -- contrpadopen.openpad 
+coroutine.wrap(OOSA_fake_script)()
+local function CZWYI_fake_script() -- contrpadopen.openpad 
 	local script = Instance.new('LocalScript', contrpadopen)
 
 	local a2 = script.Parent.Parent.ControlPad
@@ -653,8 +658,8 @@ local function PAGSN_fake_script() -- contrpadopen.openpad
 		b2.Visible = false
 	end)
 end
-coroutine.wrap(PAGSN_fake_script)()
-local function WZKCXCC_fake_script() -- Human.info 
+coroutine.wrap(CZWYI_fake_script)()
+local function SDEVZW_fake_script() -- Human.info 
 	local script = Instance.new('LocalScript', Human)
 
 	wait(1)
@@ -664,4 +669,4 @@ local function WZKCXCC_fake_script() -- Human.info
 		Duration = 5;
 	})
 end
-coroutine.wrap(WZKCXCC_fake_script)()
+coroutine.wrap(SDEVZW_fake_script)()

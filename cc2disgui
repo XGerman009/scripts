@@ -1,0 +1,231 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Disclaimer = Instance.new("ScreenGui")
+local _1 = Instance.new("Frame")
+local launch = Instance.new("TextButton")
+local shit = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local title = Instance.new("TextLabel")
+local Warning = Instance.new("TextLabel")
+local firecdwarn = Instance.new("TextLabel")
+local firecd = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+
+--Properties:
+
+Disclaimer.Name = "Disclaimer"
+Disclaimer.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Disclaimer.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+_1.Name = "1"
+_1.Parent = Disclaimer
+_1.BackgroundColor3 = Color3.fromRGB(62, 62, 62)
+_1.BorderSizePixel = 4
+_1.Position = UDim2.new(0.236520857, 0, 0.40936169, 0)
+_1.Size = UDim2.new(0, 200, 0, 174)
+
+launch.Name = "launch"
+launch.Parent = _1
+launch.BackgroundColor3 = Color3.fromRGB(42, 42, 42)
+launch.Position = UDim2.new(0, 0, 0.71158874, 0)
+launch.Size = UDim2.new(0, 200, 0, 50)
+launch.Style = Enum.ButtonStyle.RobloxRoundDropdownButton
+launch.Font = Enum.Font.RobotoMono
+launch.Text = "Launch script"
+launch.TextColor3 = Color3.fromRGB(0, 0, 0)
+launch.TextSize = 23.000
+
+shit.Name = "shit"
+shit.Parent = _1
+shit.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
+shit.Position = UDim2.new(0.0300002098, 0, 0.0172413588, 0)
+shit.Size = UDim2.new(0, 26, 0, 26)
+shit.Font = Enum.Font.SourceSans
+shit.Text = "X"
+shit.TextColor3 = Color3.fromRGB(255, 255, 255)
+shit.TextSize = 30.000
+
+UICorner.Parent = shit
+
+title.Name = "title"
+title.Parent = _1
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.159999996, 0, 0, 0)
+title.Size = UDim2.new(0, 168, 0, 32)
+title.Font = Enum.Font.GothamBold
+title.Text = "By pizza_man#7693"
+title.TextColor3 = Color3.fromRGB(255, 255, 255)
+title.TextSize = 14.000
+
+Warning.Name = "Warning!"
+Warning.Parent = _1
+Warning.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Warning.BackgroundTransparency = 1.000
+Warning.Position = UDim2.new(0.0519148968, 0, 0.146050155, 0)
+Warning.Size = UDim2.new(0, 188, 0, 50)
+Warning.Font = Enum.Font.Arcade
+Warning.Text = "Warning!"
+Warning.TextColor3 = Color3.fromRGB(255, 0, 4)
+Warning.TextSize = 41.000
+
+firecdwarn.Name = "firecdwarn"
+firecdwarn.Parent = _1
+firecdwarn.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+firecdwarn.BackgroundTransparency = 1.000
+firecdwarn.Position = UDim2.new(0.0649999976, 0, 0.330879509, 0)
+firecdwarn.Size = UDim2.new(0, 168, 0, 49)
+firecdwarn.Font = Enum.Font.GothamBold
+firecdwarn.Text = "- Your exploit must to support:"
+firecdwarn.TextColor3 = Color3.fromRGB(255, 255, 255)
+firecdwarn.TextSize = 12.000
+
+firecd.Name = "firecd"
+firecd.Parent = _1
+firecd.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+firecd.BackgroundTransparency = 1.000
+firecd.Position = UDim2.new(0.0799999908, 0, 0.431034476, 0)
+firecd.Size = UDim2.new(0, 168, 0, 49)
+firecd.Font = Enum.Font.GothamBold
+firecd.Text = "fireclickdetector()"
+firecd.TextColor3 = Color3.fromRGB(255, 255, 255)
+firecd.TextSize = 12.000
+
+UICorner_2.Parent = _1
+
+-- Scripts:
+
+local function DEQH_fake_script() -- launch.LocalScript 
+	local script = Instance.new('LocalScript', launch)
+
+	local destroyshit = script.Parent.Parent.Parent.Parent.Disclaimer
+	local warnfirecd = script.Parent.Parent.firecd
+	local warngamepass = script.Parent.Parent.gamepasswarn
+	local password = script.Parent.Parent.password
+	local buttontext = script.Parent.Parent.launch
+	local function run()
+		loadstring(game:HttpGet(('https://raw.githubusercontent.com/XGerman009/scripts/main/cc2infogui'),true))()
+	end
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		if KRNL_LOADED or secure_load or is_sirhurt_closure or pebc_execute or IS_VIVA_LOADED or isvm or IS_COCO_LOADED then
+			print("Your exploit not supports. Shutdowning...")
+			print("Your exploit not supports. Shutdowning...")
+			print("Your exploit not supports. Shutdowning...")
+			print("Your exploit not supports. Shutdowning...")
+			print("Your exploit not supports. Shutdowning...")
+			warngamepass:Destroy()
+			warnfirecd.Text = "Sorry! Your exploit not supports script."
+		end
+		if is_synapse_function or syn then
+			print("Your exploit supports script. Running...")
+			warngamepass:Destroy()
+			warnfirecd.Text = "Your exploit support script! Running..."
+			wait(3)
+			destroyshit:Destroy()
+			run()
+		end
+	end)	
+end
+coroutine.wrap(DEQH_fake_script)()
+local function KQHTJDO_fake_script() -- shit.LocalScript 
+	local script = Instance.new('LocalScript', shit)
+
+	local bye1 = script.Parent.Parent.Parent.Parent.Disclaimer
+	local button1 = script.Parent.Parent.shit
+	
+	button1.Activated:Connect(function()
+		bye1.Parent:Destroy()
+	end)
+end
+coroutine.wrap(KQHTJDO_fake_script)()
+local function VTGL_fake_script() -- _1.Move 
+	local script = Instance.new('LocalScript', _1)
+
+	local UIS = game:GetService('UserInputService')
+	
+	local frame = script.Parent
+	
+	
+	
+	local dragToggle = nil
+	
+	local dragSpeed = 0.50
+	
+	local dragStart = nil
+	
+	local startPos = nil
+	
+	
+	
+	local function updateInput(input)
+	
+		local delta = input.Position - dragStart
+	
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+	
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	
+		game:GetService('TweenService'):Create(frame, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	
+	end
+	
+	
+	
+	frame.InputBegan:Connect(function(input)
+	
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+	
+			dragToggle = true
+	
+			dragStart = input.Position
+	
+			startPos = frame.Position
+	
+			input.Changed:Connect(function()
+	
+				if input.UserInputState == Enum.UserInputState.End then
+	
+					dragToggle = false
+	
+				end
+	
+			end)
+	
+		end
+	
+	end)
+	
+	
+	
+	UIS.InputChanged:Connect(function(input)
+	
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+	
+			if dragToggle then
+	
+				updateInput(input)
+	
+			end
+	
+		end
+	
+	end)
+end
+coroutine.wrap(VTGL_fake_script)()
+local function AFKGAEB_fake_script() -- _1.Rainbowshit 
+	local script = Instance.new('LocalScript', _1)
+
+	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
+	
+	counter = 0
+	
+	while wait(0.1)do
+		script.Parent.UIStroke.Color = Color3.fromHSV(zigzag(counter),1,1)
+		counter = counter + 0.01
+	end
+end
+coroutine.wrap(AFKGAEB_fake_script)()

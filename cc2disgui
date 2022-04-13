@@ -104,7 +104,7 @@ Warning.TextSize = 41.000
 
 -- Scripts:
 
-local function UTYOPG_fake_script() -- launch.run 
+local function SRDN_fake_script() -- launch.run 
 	local script = Instance.new('LocalScript', launch)
 
 	local destroyshit = script.Parent.Parent.Parent.Parent.Disclaimer
@@ -141,8 +141,8 @@ local function UTYOPG_fake_script() -- launch.run
 		end
 	end)
 end
-coroutine.wrap(UTYOPG_fake_script)()
-local function ENOC_fake_script() -- shit.shit 
+coroutine.wrap(SRDN_fake_script)()
+local function HITMOWN_fake_script() -- shit.shit 
 	local script = Instance.new('LocalScript', shit)
 
 	local button = script.Parent
@@ -152,8 +152,8 @@ local function ENOC_fake_script() -- shit.shit
 		hide.Visible = false
 	end)
 end
-coroutine.wrap(ENOC_fake_script)()
-local function QFXKZCF_fake_script() -- menu.Move 
+coroutine.wrap(HITMOWN_fake_script)()
+local function DYZOPK_fake_script() -- menu.Move 
 	local script = Instance.new('LocalScript', menu)
 
 	local UIS = game:GetService('UserInputService')
@@ -191,8 +191,8 @@ local function QFXKZCF_fake_script() -- menu.Move
 		end
 	end)
 end
-coroutine.wrap(QFXKZCF_fake_script)()
-local function FXMK_fake_script() -- Warning.wtf 
+coroutine.wrap(DYZOPK_fake_script)()
+local function UQRBHR_fake_script() -- Warning.wtf 
 	local script = Instance.new('LocalScript', Warning)
 
 	local rainbow = script.Parent.Parent.Warning
@@ -205,4 +205,4 @@ local function FXMK_fake_script() -- Warning.wtf
 	until false
 	
 end
-coroutine.wrap(FXMK_fake_script)()
+coroutine.wrap(UQRBHR_fake_script)()

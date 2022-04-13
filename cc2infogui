@@ -234,7 +234,7 @@ UICorner_5.Parent = contrpadopen
 
 -- Scripts:
 
-local function INPAVBS_fake_script() -- Close.closeinfo 
+local function XQPKRU_fake_script() -- Close.closeinfo 
 	local script = Instance.new('LocalScript', Close)
 
 	local frame2 = script.Parent.Parent.Parent.Info
@@ -245,8 +245,8 @@ local function INPAVBS_fake_script() -- Close.closeinfo
 		open2.Visible = true
 	end)
 end
-coroutine.wrap(INPAVBS_fake_script)()
-local function KUHLO_fake_script() -- Timer_2.Copier 
+coroutine.wrap(XQPKRU_fake_script)()
+local function LTUDA_fake_script() -- Timer_2.Copier 
 	local script = Instance.new('LocalScript', Timer_2)
 
 	local tfg = game:GetService("Workspace").EnergyCore.ControlRoom.Screens.Energy.UI.Frame.Time
@@ -387,7 +387,6 @@ local function KUHLO_fake_script() -- Timer_2.Copier
 			stg.Text = "Energy Status: Filled"
 			ssg.Text = "true"
 			lockmeltdown.Visible = true
-			did1:Play()
 		end
 		if sfg.Text == "RISING" then
 			lockmeltdown.Visible = false
@@ -407,8 +406,8 @@ local function KUHLO_fake_script() -- Timer_2.Copier
 		wait(5)
 	until false
 end
-coroutine.wrap(KUHLO_fake_script)()
-local function IDCTZ_fake_script() -- Info.Move 
+coroutine.wrap(LTUDA_fake_script)()
+local function IIJWM_fake_script() -- Info.Move 
 	local script = Instance.new('LocalScript', Info)
 
 	local UIS = game:GetService('UserInputService')
@@ -481,8 +480,8 @@ local function IDCTZ_fake_script() -- Info.Move
 	
 	end)
 end
-coroutine.wrap(IDCTZ_fake_script)()
-local function ACQXJ_fake_script() -- Info.Checker 
+coroutine.wrap(IIJWM_fake_script)()
+local function PVKGYMV_fake_script() -- Info.Checker 
 	local script = Instance.new('LocalScript', Info)
 
 	local ec = game:GetService("Workspace").EnergyCore.ControlRoom.Screens.Energy.UI.Frame.Status
@@ -506,8 +505,8 @@ local function ACQXJ_fake_script() -- Info.Checker
 		print("DEBUG: Changed the es")
 	end
 end
-coroutine.wrap(ACQXJ_fake_script)()
-local function NANKR_fake_script() -- Info.RainbowA 
+coroutine.wrap(PVKGYMV_fake_script)()
+local function WKWG_fake_script() -- Info.RainbowA 
 	local script = Instance.new('LocalScript', Info)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
@@ -523,8 +522,8 @@ local function NANKR_fake_script() -- Info.RainbowA
 		counter = counter + 0.01
 	end
 end
-coroutine.wrap(NANKR_fake_script)()
-local function QHRQ_fake_script() -- Human.hide 
+coroutine.wrap(WKWG_fake_script)()
+local function FDSV_fake_script() -- Human.hide 
 	local script = Instance.new('LocalScript', Human)
 
 	local a = script.Parent.contrpadopen
@@ -537,8 +536,8 @@ local function QHRQ_fake_script() -- Human.hide
 	
 	
 end
-coroutine.wrap(QHRQ_fake_script)()
-local function BKWY_fake_script() -- infoguiopen.openinfo 
+coroutine.wrap(FDSV_fake_script)()
+local function VDJAIVI_fake_script() -- infoguiopen.openinfo 
 	local script = Instance.new('LocalScript', infoguiopen)
 
 	local frame3 = script.Parent.Parent.Info
@@ -550,8 +549,8 @@ local function BKWY_fake_script() -- infoguiopen.openinfo
 	end)
 	
 end
-coroutine.wrap(BKWY_fake_script)()
-local function SVEFVT_fake_script() -- StarterEnergy.startenergy 
+coroutine.wrap(VDJAIVI_fake_script)()
+local function CNNWS_fake_script() -- StarterEnergy.startenergy 
 	local script = Instance.new('LocalScript', StarterEnergy)
 
 	local button9 = script.Parent.Parent.StarterEnergy
@@ -590,8 +589,8 @@ local function SVEFVT_fake_script() -- StarterEnergy.startenergy
 	
 	button9.Activated:Connect(onButtonActivated)
 end
-coroutine.wrap(SVEFVT_fake_script)()
-local function MZVMHX_fake_script() -- GlassBreaker.glassbreak 
+coroutine.wrap(CNNWS_fake_script)()
+local function KYKESR_fake_script() -- GlassBreaker.glassbreak 
 	local script = Instance.new('LocalScript', GlassBreaker)
 
 	local button5 = script.Parent.Parent.GlassBreaker
@@ -632,8 +631,8 @@ local function MZVMHX_fake_script() -- GlassBreaker.glassbreak
 	
 	button5.Activated:Connect(onButtonActivated)
 end
-coroutine.wrap(MZVMHX_fake_script)()
-local function UQEBXH_fake_script() -- StarterMeltdown.startmelt 
+coroutine.wrap(KYKESR_fake_script)()
+local function WSFAKIH_fake_script() -- StarterMeltdown.startmelt 
 	local script = Instance.new('LocalScript', StarterMeltdown)
 
 	local button555 = script.Parent.Parent.StarterMeltdown
@@ -669,8 +668,8 @@ local function UQEBXH_fake_script() -- StarterMeltdown.startmelt
 	
 	button555.Activated:Connect(onButtonActivated)
 end
-coroutine.wrap(UQEBXH_fake_script)()
-local function AQWTDRO_fake_script() -- ControlPad.Move 
+coroutine.wrap(WSFAKIH_fake_script)()
+local function CLDBZ_fake_script() -- ControlPad.Move 
 	local script = Instance.new('LocalScript', ControlPad)
 
 	local UIS = game:GetService('UserInputService')
@@ -708,8 +707,8 @@ local function AQWTDRO_fake_script() -- ControlPad.Move
 		end
 	end)
 end
-coroutine.wrap(AQWTDRO_fake_script)()
-local function BMRZKWO_fake_script() -- Close_2.closepad 
+coroutine.wrap(CLDBZ_fake_script)()
+local function QBFN_fake_script() -- Close_2.closepad 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local frame = script.Parent.Parent.Parent.ControlPad
@@ -720,8 +719,8 @@ local function BMRZKWO_fake_script() -- Close_2.closepad
 		open.Visible = true
 	end)
 end
-coroutine.wrap(BMRZKWO_fake_script)()
-local function DHKI_fake_script() -- contrpadopen.openpad 
+coroutine.wrap(QBFN_fake_script)()
+local function QSGTYU_fake_script() -- contrpadopen.openpad 
 	local script = Instance.new('LocalScript', contrpadopen)
 
 	local a2 = script.Parent.Parent.ControlPad
@@ -732,4 +731,4 @@ local function DHKI_fake_script() -- contrpadopen.openpad
 		b2.Visible = false
 	end)
 end
-coroutine.wrap(DHKI_fake_script)()
+coroutine.wrap(QSGTYU_fake_script)()

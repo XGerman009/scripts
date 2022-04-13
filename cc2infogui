@@ -234,7 +234,7 @@ UICorner_5.Parent = contrpadopen
 
 -- Scripts:
 
-local function XQPKRU_fake_script() -- Close.closeinfo 
+local function BIEFC_fake_script() -- Close.closeinfo 
 	local script = Instance.new('LocalScript', Close)
 
 	local frame2 = script.Parent.Parent.Parent.Info
@@ -245,8 +245,8 @@ local function XQPKRU_fake_script() -- Close.closeinfo
 		open2.Visible = true
 	end)
 end
-coroutine.wrap(XQPKRU_fake_script)()
-local function LTUDA_fake_script() -- Timer_2.Copier 
+coroutine.wrap(BIEFC_fake_script)()
+local function TCAKBDJ_fake_script() -- Timer_2.Copier 
 	local script = Instance.new('LocalScript', Timer_2)
 
 	local tfg = game:GetService("Workspace").EnergyCore.ControlRoom.Screens.Energy.UI.Frame.Time
@@ -406,8 +406,8 @@ local function LTUDA_fake_script() -- Timer_2.Copier
 		wait(5)
 	until false
 end
-coroutine.wrap(LTUDA_fake_script)()
-local function IIJWM_fake_script() -- Info.Move 
+coroutine.wrap(TCAKBDJ_fake_script)()
+local function LLGB_fake_script() -- Info.Move 
 	local script = Instance.new('LocalScript', Info)
 
 	local UIS = game:GetService('UserInputService')
@@ -480,8 +480,8 @@ local function IIJWM_fake_script() -- Info.Move
 	
 	end)
 end
-coroutine.wrap(IIJWM_fake_script)()
-local function PVKGYMV_fake_script() -- Info.Checker 
+coroutine.wrap(LLGB_fake_script)()
+local function BWTECD_fake_script() -- Info.Checker 
 	local script = Instance.new('LocalScript', Info)
 
 	local ec = game:GetService("Workspace").EnergyCore.ControlRoom.Screens.Energy.UI.Frame.Status
@@ -505,8 +505,8 @@ local function PVKGYMV_fake_script() -- Info.Checker
 		print("DEBUG: Changed the es")
 	end
 end
-coroutine.wrap(PVKGYMV_fake_script)()
-local function WKWG_fake_script() -- Info.RainbowA 
+coroutine.wrap(BWTECD_fake_script)()
+local function LRFAALQ_fake_script() -- Info.RainbowA 
 	local script = Instance.new('LocalScript', Info)
 
 	function zigzag(X) return math.acos(math.cos(X*math.pi))/math.pi end
@@ -522,8 +522,8 @@ local function WKWG_fake_script() -- Info.RainbowA
 		counter = counter + 0.01
 	end
 end
-coroutine.wrap(WKWG_fake_script)()
-local function FDSV_fake_script() -- Human.hide 
+coroutine.wrap(LRFAALQ_fake_script)()
+local function AFBRPQ_fake_script() -- Human.hide 
 	local script = Instance.new('LocalScript', Human)
 
 	local a = script.Parent.contrpadopen
@@ -536,8 +536,8 @@ local function FDSV_fake_script() -- Human.hide
 	
 	
 end
-coroutine.wrap(FDSV_fake_script)()
-local function VDJAIVI_fake_script() -- infoguiopen.openinfo 
+coroutine.wrap(AFBRPQ_fake_script)()
+local function DFXTKWE_fake_script() -- infoguiopen.openinfo 
 	local script = Instance.new('LocalScript', infoguiopen)
 
 	local frame3 = script.Parent.Parent.Info
@@ -549,8 +549,8 @@ local function VDJAIVI_fake_script() -- infoguiopen.openinfo
 	end)
 	
 end
-coroutine.wrap(VDJAIVI_fake_script)()
-local function CNNWS_fake_script() -- StarterEnergy.startenergy 
+coroutine.wrap(DFXTKWE_fake_script)()
+local function BOLJZLP_fake_script() -- StarterEnergy.startenergy 
 	local script = Instance.new('LocalScript', StarterEnergy)
 
 	local button9 = script.Parent.Parent.StarterEnergy
@@ -589,8 +589,8 @@ local function CNNWS_fake_script() -- StarterEnergy.startenergy
 	
 	button9.Activated:Connect(onButtonActivated)
 end
-coroutine.wrap(CNNWS_fake_script)()
-local function KYKESR_fake_script() -- GlassBreaker.glassbreak 
+coroutine.wrap(BOLJZLP_fake_script)()
+local function FKGT_fake_script() -- GlassBreaker.glassbreak 
 	local script = Instance.new('LocalScript', GlassBreaker)
 
 	local button5 = script.Parent.Parent.GlassBreaker
@@ -598,6 +598,13 @@ local function KYKESR_fake_script() -- GlassBreaker.glassbreak
 	local b61 = game:GetService("Workspace").EnergyCore.ControlRoom.Glass.ClickDetector
 	local glass = Instance.new("Sound")
 	local errorgl = Instance.new("Sound")
+	local function notif()
+		game.StarterGui:SetCore("SendNotification", {
+			Title = "pizza_man";
+			Text = "You already broke the safety glass";
+			Duration = 5;
+		})
+	end
 	
 	glass.Name = "Sound"
 	glass.SoundId = "http://www.roblox.com/asset/?id=2596202821"
@@ -626,13 +633,14 @@ local function KYKESR_fake_script() -- GlassBreaker.glassbreak
 			text8.Text = "Glass status: Unbroken"
 		else
 			errorgl:Play()
+			notif()
 		end
 	end
 	
 	button5.Activated:Connect(onButtonActivated)
 end
-coroutine.wrap(KYKESR_fake_script)()
-local function WSFAKIH_fake_script() -- StarterMeltdown.startmelt 
+coroutine.wrap(FKGT_fake_script)()
+local function BAGUXJE_fake_script() -- StarterMeltdown.startmelt 
 	local script = Instance.new('LocalScript', StarterMeltdown)
 
 	local button555 = script.Parent.Parent.StarterMeltdown
@@ -656,7 +664,7 @@ local function WSFAKIH_fake_script() -- StarterMeltdown.startmelt
 	errmelt.Parent = game.Workspace
 	
 	local function onButtonActivated()
-		if e4s.Text == "Energy Status: Full" then
+		if e4s.Text == "Energy Status: Filled" then
 			ok5:Play()
 			fireclickdetector(c5)
 			print("DEBUG: Detected click to MELTDOWN")
@@ -668,8 +676,8 @@ local function WSFAKIH_fake_script() -- StarterMeltdown.startmelt
 	
 	button555.Activated:Connect(onButtonActivated)
 end
-coroutine.wrap(WSFAKIH_fake_script)()
-local function CLDBZ_fake_script() -- ControlPad.Move 
+coroutine.wrap(BAGUXJE_fake_script)()
+local function RAWDNFM_fake_script() -- ControlPad.Move 
 	local script = Instance.new('LocalScript', ControlPad)
 
 	local UIS = game:GetService('UserInputService')
@@ -707,8 +715,8 @@ local function CLDBZ_fake_script() -- ControlPad.Move
 		end
 	end)
 end
-coroutine.wrap(CLDBZ_fake_script)()
-local function QBFN_fake_script() -- Close_2.closepad 
+coroutine.wrap(RAWDNFM_fake_script)()
+local function RXGGKW_fake_script() -- Close_2.closepad 
 	local script = Instance.new('LocalScript', Close_2)
 
 	local frame = script.Parent.Parent.Parent.ControlPad
@@ -719,8 +727,8 @@ local function QBFN_fake_script() -- Close_2.closepad
 		open.Visible = true
 	end)
 end
-coroutine.wrap(QBFN_fake_script)()
-local function QSGTYU_fake_script() -- contrpadopen.openpad 
+coroutine.wrap(RXGGKW_fake_script)()
+local function HUGCRND_fake_script() -- contrpadopen.openpad 
 	local script = Instance.new('LocalScript', contrpadopen)
 
 	local a2 = script.Parent.Parent.ControlPad
@@ -731,4 +739,4 @@ local function QSGTYU_fake_script() -- contrpadopen.openpad
 		b2.Visible = false
 	end)
 end
-coroutine.wrap(QSGTYU_fake_script)()
+coroutine.wrap(HUGCRND_fake_script)()

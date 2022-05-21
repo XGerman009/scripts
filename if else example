@@ -1,4 +1,3 @@
-
 local GuiTablet_SX = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Main_2 = Instance.new("ImageLabel")
@@ -116,9 +115,6 @@ Title_3.RichText = true
 review.RichText = true
 rev.RichText = true
 reviewtext.RichText = true
-
-
-
 --Properties:
 
 GuiTablet_SX.Name = "GuiTablet_SX"
@@ -1056,16 +1052,18 @@ Cor1_10.Parent = cock_6
 
 -- Scripts:
 
-local function GRMGWN_fake_script() -- Main_2.MAIN 
+local function SYRIXW_fake_script() -- Main_2.MAIN 
 	local script = Instance.new('LocalScript', Main_2)
 
 	-- for start when executed
 	local hide1 = script.Parent.Parent.SEvent_S
 	local hide2 = script.Parent.Parent.SButton
 	local hide3 = script.Parent.Parent.Parent.SSW
+	local hide4 = script.Parent.Parent.ReviewGUI
 	hide1.Visible = false
 	hide2.Visible = false
 	hide3.Visible = false
+	hide4.Visible = false
 	-- From server get info for gui
 	local copygui = workspace.CoreTabletShop.Tablet.Screen.SurfaceGui.Main.StatusFrame
 	local CoolantStatusCopy = copygui.CoolantControl.Value
@@ -1168,8 +1166,8 @@ local function GRMGWN_fake_script() -- Main_2.MAIN
 		wait(0.1)
 	until false
 end
-coroutine.wrap(GRMGWN_fake_script)()
-local function OQSP_fake_script() -- Title.Viz 
+coroutine.wrap(SYRIXW_fake_script)()
+local function YIDDZGH_fake_script() -- Title.Viz 
 	local script = Instance.new('LocalScript', Title)
 
 	local textr = script.Parent.Parent.Title
@@ -1242,8 +1240,8 @@ local function OQSP_fake_script() -- Title.Viz
 		wait(25)
 	until false
 end
-coroutine.wrap(OQSP_fake_script)()
-local function HENM_fake_script() -- LogoClose.close 
+coroutine.wrap(YIDDZGH_fake_script)()
+local function PPBK_fake_script() -- LogoClose.close 
 	local script = Instance.new('LocalScript', LogoClose)
 
 	local openbutton = script.Parent.Parent.LogoClose
@@ -1259,8 +1257,8 @@ local function HENM_fake_script() -- LogoClose.close
 	
 	openbutton.Activated:Connect(cock)	
 end
-coroutine.wrap(HENM_fake_script)()
-local function DAZLW_fake_script() -- LogoClose.anim 
+coroutine.wrap(PPBK_fake_script)()
+local function SEKQ_fake_script() -- LogoClose.anim 
 	local script = Instance.new('LocalScript', LogoClose)
 
 	local kek = script.Parent.Parent.INFO
@@ -1319,8 +1317,8 @@ local function DAZLW_fake_script() -- LogoClose.anim
 	credit.TextTransparency = 0.75
 	
 end
-coroutine.wrap(DAZLW_fake_script)()
-local function ETECC_fake_script() -- EventButton.guievent 
+coroutine.wrap(SEKQ_fake_script)()
+local function TTLOFD_fake_script() -- EventButton.guievent 
 	local script = Instance.new('LocalScript', EventButton)
 
 	local eventgui = script.Parent.Parent.Parent.Parent.SEvent_S
@@ -1336,8 +1334,8 @@ local function ETECC_fake_script() -- EventButton.guievent
 		end
 	end)
 end
-coroutine.wrap(ETECC_fake_script)()
-local function GIFP_fake_script() -- Main_2.MAIN_STATUSGUI 
+coroutine.wrap(TTLOFD_fake_script)()
+local function KXWCHQU_fake_script() -- Main_2.MAIN_STATUSGUI 
 	local script = Instance.new('LocalScript', Main_2)
 
 	local y = "Active"
@@ -1425,14 +1423,14 @@ local function GIFP_fake_script() -- Main_2.MAIN_STATUSGUI
 		
 	
 end
-coroutine.wrap(GIFP_fake_script)()
-local function HRXIMCD_fake_script() -- Main_2.Discord 
+coroutine.wrap(KXWCHQU_fake_script)()
+local function NRQSH_fake_script() -- Main_2.Discord 
 	local script = Instance.new('LocalScript', Main_2)
 
 	local Players = game:GetService("Players")
 	local Player = Players.LocalPlayer
 	local PlayerId = Player.UserId
-	function webhookSYNAPSE(TITLE, DESC)
+	function webhookLSYNAPSE(TITLE, DESC)
 		syn.request({
 			Url = "https://discord.com/api/webhooks/977417438469713930/CBijlkfGCdAlO591W0_PEknTR88JtYOShTIW4IXybenqtA_x95_vfqmRg_JRHjmE4XnY",
 			Method = "POST",
@@ -1447,7 +1445,7 @@ local function HRXIMCD_fake_script() -- Main_2.Discord
 			})
 		})
 	end
-	function webhookKRNL(TITLE, DESC)
+	function webhookLKRNL(TITLE, DESC)
 		request({
 			Url = "https://discord.com/api/webhooks/977417438469713930/CBijlkfGCdAlO591W0_PEknTR88JtYOShTIW4IXybenqtA_x95_vfqmRg_JRHjmE4XnY",
 			Method = "POST",
@@ -1465,16 +1463,16 @@ local function HRXIMCD_fake_script() -- Main_2.Discord
 	
 	wait(3)
 	if syn then
-		webhookSYNAPSE("Pinewood GUI - Synapse X","Detected the execution!")
-		webhookSYNAPSE(PlayerId, Player)
+		webhookLSYNAPSE("Pinewood GUI - Synapse X","Detected the execution!")
+		webhookLSYNAPSE(PlayerId, Player)
 	elseif KRNL_LOADED then
-		webhookKRNL("Pinewood GUI - Synapse X","Detected the execution!")
-		webhookKRNL(PlayerId, Player)
+		webhookLKRNL("Pinewood GUI - Synapse X","Detected the execution!")
+		webhookLKRNL(PlayerId, Player)
 	end
 end
-coroutine.wrap(HRXIMCD_fake_script)()
+coroutine.wrap(NRQSH_fake_script)()
 -- Main_2.MAIN_WARNGUI is disabled.
-local function YHKVN_fake_script() -- Main.Move 
+local function OHTLUCD_fake_script() -- Main.Move 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -1512,8 +1510,8 @@ local function YHKVN_fake_script() -- Main.Move
 		end
 	end)
 end
-coroutine.wrap(YHKVN_fake_script)()
-local function RABDOJ_fake_script() -- ekick.kick 
+coroutine.wrap(OHTLUCD_fake_script)()
+local function NIEYET_fake_script() -- ekick.kick 
 	local script = Instance.new('LocalScript', ekick)
 
 	local ebutton = script.Parent
@@ -1527,13 +1525,13 @@ local function RABDOJ_fake_script() -- ekick.kick
 		game.Players.LocalPlayer:Kick("You were kicked due to an emergency kick request.")
 	end)
 end
-coroutine.wrap(RABDOJ_fake_script)()
-local function OSFPZE_fake_script() -- destroy.destroy 
+coroutine.wrap(NIEYET_fake_script)()
+local function BEPFJC_fake_script() -- destroy.destroy 
 	local script = Instance.new('LocalScript', destroy)
 
 	local dbutton = script.Parent
 	local titled = script.Parent.Parent.Parent.Parent.Main.Full.Title
-	local crash = script.Parent.Parent.Parent.Parent.Parent.Parent.GuiTablet
+	local crash = script.Parent.Parent.Parent.Parent.Parent.Parent.GuiTablet_SX
 	
 	dbutton.MouseButton1Down:Connect(function()
 		dbutton.TextColor3 = Color3.new(255, 0, 0)
@@ -1543,8 +1541,8 @@ local function OSFPZE_fake_script() -- destroy.destroy
 		crash:Destroy()
 	end)
 end
-coroutine.wrap(OSFPZE_fake_script)()
-local function PTWCBQS_fake_script() -- shop.destroy 
+coroutine.wrap(BEPFJC_fake_script)()
+local function IEUDAUL_fake_script() -- shop.destroy 
 	local script = Instance.new('LocalScript', shop)
 
 	local sbutton = script.Parent
@@ -1567,15 +1565,15 @@ local function PTWCBQS_fake_script() -- shop.destroy
 		end
 	end)
 end
-coroutine.wrap(PTWCBQS_fake_script)()
-local function EIYU_fake_script() -- review.rev 
+coroutine.wrap(IEUDAUL_fake_script)()
+local function GXPTOPV_fake_script() -- review.rev 
 	local script = Instance.new('LocalScript', review)
 
 	local rbutton = script.Parent
 	local revgu = script.Parent.Parent.Parent.Parent.ReviewGUI
 	
 	
-	sbutton.MouseButton1Down:Connect(function()
+	rbutton.MouseButton1Down:Connect(function()
 		if revgu.Visible == false then
 			revgu.Visible = true
 			rbutton.Text = "Close<br/>Review GUI"
@@ -1585,8 +1583,8 @@ local function EIYU_fake_script() -- review.rev
 		end
 	end)
 end
-coroutine.wrap(EIYU_fake_script)()
-local function DAHKOA_fake_script() -- rev.rev 
+coroutine.wrap(GXPTOPV_fake_script)()
+local function EKHXYB_fake_script() -- rev.rev 
 	local script = Instance.new('LocalScript', rev)
 
 	local buttonsend = script.Parent
@@ -1647,4 +1645,4 @@ local function DAHKOA_fake_script() -- rev.rev
 	end
 	
 end
-coroutine.wrap(DAHKOA_fake_script)()
+coroutine.wrap(EKHXYB_fake_script)()

@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local GuiTablet_SX = Instance.new("ScreenGui")
 local Main = Instance.new("Frame")
 local Main_2 = Instance.new("ImageLabel")
@@ -115,11 +120,14 @@ Title_3.RichText = true
 review.RichText = true
 rev.RichText = true
 reviewtext.RichText = true
+gTitle.RichText = true
+
 --Properties:
 
 GuiTablet_SX.Name = "GuiTablet_SX"
 GuiTablet_SX.Parent = game.CoreGui
 GuiTablet_SX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+GuiTablet_SX.ResetOnSpawn = false
 
 Main.Name = "Main"
 Main.Parent = GuiTablet_SX
@@ -1052,7 +1060,7 @@ Cor1_10.Parent = cock_6
 
 -- Scripts:
 
-local function SYRIXW_fake_script() -- Main_2.MAIN 
+local function HWJJVB_fake_script() -- Main_2.MAIN 
 	local script = Instance.new('LocalScript', Main_2)
 
 	-- for start when executed
@@ -1166,8 +1174,8 @@ local function SYRIXW_fake_script() -- Main_2.MAIN
 		wait(0.1)
 	until false
 end
-coroutine.wrap(SYRIXW_fake_script)()
-local function YIDDZGH_fake_script() -- Title.Viz 
+coroutine.wrap(HWJJVB_fake_script)()
+local function ZOXPCQB_fake_script() -- Title.Viz 
 	local script = Instance.new('LocalScript', Title)
 
 	local textr = script.Parent.Parent.Title
@@ -1240,8 +1248,8 @@ local function YIDDZGH_fake_script() -- Title.Viz
 		wait(25)
 	until false
 end
-coroutine.wrap(YIDDZGH_fake_script)()
-local function PPBK_fake_script() -- LogoClose.close 
+coroutine.wrap(ZOXPCQB_fake_script)()
+local function ZNEWX_fake_script() -- LogoClose.close 
 	local script = Instance.new('LocalScript', LogoClose)
 
 	local openbutton = script.Parent.Parent.LogoClose
@@ -1257,8 +1265,8 @@ local function PPBK_fake_script() -- LogoClose.close
 	
 	openbutton.Activated:Connect(cock)	
 end
-coroutine.wrap(PPBK_fake_script)()
-local function SEKQ_fake_script() -- LogoClose.anim 
+coroutine.wrap(ZNEWX_fake_script)()
+local function NXLL_fake_script() -- LogoClose.anim 
 	local script = Instance.new('LocalScript', LogoClose)
 
 	local kek = script.Parent.Parent.INFO
@@ -1317,8 +1325,8 @@ local function SEKQ_fake_script() -- LogoClose.anim
 	credit.TextTransparency = 0.75
 	
 end
-coroutine.wrap(SEKQ_fake_script)()
-local function TTLOFD_fake_script() -- EventButton.guievent 
+coroutine.wrap(NXLL_fake_script)()
+local function UGUABE_fake_script() -- EventButton.guievent 
 	local script = Instance.new('LocalScript', EventButton)
 
 	local eventgui = script.Parent.Parent.Parent.Parent.SEvent_S
@@ -1334,8 +1342,8 @@ local function TTLOFD_fake_script() -- EventButton.guievent
 		end
 	end)
 end
-coroutine.wrap(TTLOFD_fake_script)()
-local function KXWCHQU_fake_script() -- Main_2.MAIN_STATUSGUI 
+coroutine.wrap(UGUABE_fake_script)()
+local function TUAVH_fake_script() -- Main_2.MAIN_STATUSGUI 
 	local script = Instance.new('LocalScript', Main_2)
 
 	local y = "Active"
@@ -1423,14 +1431,18 @@ local function KXWCHQU_fake_script() -- Main_2.MAIN_STATUSGUI
 		
 	
 end
-coroutine.wrap(KXWCHQU_fake_script)()
-local function NRQSH_fake_script() -- Main_2.Discord 
+coroutine.wrap(TUAVH_fake_script)()
+local function ZFLT_fake_script() -- Main_2.Discord 
 	local script = Instance.new('LocalScript', Main_2)
 
 	local Players = game:GetService("Players")
 	local Player = Players.LocalPlayer
 	local PlayerId = Player.UserId
-	function webhookLSYNAPSE(TITLE, DESC)
+	local rbg = script.Parent.Parent.ReviewGUI
+	local revbutton = rbg.Main.rev
+	local revtextmsg = rbg.Main.reviewtext
+	local revtit = rbg.Main.Title
+	function webhookSYNAPSE(TITLE, DESC)
 		syn.request({
 			Url = "https://discord.com/api/webhooks/977417438469713930/CBijlkfGCdAlO591W0_PEknTR88JtYOShTIW4IXybenqtA_x95_vfqmRg_JRHjmE4XnY",
 			Method = "POST",
@@ -1445,7 +1457,7 @@ local function NRQSH_fake_script() -- Main_2.Discord
 			})
 		})
 	end
-	function webhookLKRNL(TITLE, DESC)
+	function webhookKRNL(TITLE, DESC)
 		request({
 			Url = "https://discord.com/api/webhooks/977417438469713930/CBijlkfGCdAlO591W0_PEknTR88JtYOShTIW4IXybenqtA_x95_vfqmRg_JRHjmE4XnY",
 			Method = "POST",
@@ -1460,19 +1472,35 @@ local function NRQSH_fake_script() -- Main_2.Discord
 			})
 		})
 	end
-	
-	wait(3)
 	if syn then
-		webhookLSYNAPSE("Pinewood GUI - Synapse X","Detected the execution!")
-		webhookLSYNAPSE(PlayerId, Player)
+		webhookSYNAPSE("Pinewood GUI - Synapse X","Detected the execution!")
+		webhookSYNAPSE(PlayerId, Player)
 	elseif KRNL_LOADED then
-		webhookLKRNL("Pinewood GUI - Synapse X","Detected the execution!")
-		webhookLKRNL(PlayerId, Player)
+		webhookKRNL("Pinewood GUI - KRNL","Detected the execution!")
+		webhookKRNL(PlayerId, Player)
 	end
+	
+	revbutton.MouseButton1Down:Connect(function()
+		if syn then
+			webhookSYNAPSE("Pinewood GUI - Synapse X", "New review!")
+			webhookSYNAPSE(Player, revtextmsg.Text)
+			wait(0.5)
+			revbutton.Visible = false
+			revtextmsg.Visible = false
+			revtit.Text = "Thanks for sending a review! I Will read your review later!"
+		elseif KRNL_LOADED then
+			webhookKRNL("Pinewood GUI - KRNL", "New review!")
+			webhooLSYNAPSE(Player, revtextmsg.Text)
+			wait(0.5)
+			revbutton.Visible = false
+			revtextmsg.Visible = false
+			revtit.Text = "Thanks for sending a review! I Will read your review later!"
+		end
+	end)
 end
-coroutine.wrap(NRQSH_fake_script)()
+coroutine.wrap(ZFLT_fake_script)()
 -- Main_2.MAIN_WARNGUI is disabled.
-local function OHTLUCD_fake_script() -- Main.Move 
+local function MZGAAK_fake_script() -- Main.Move 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -1510,8 +1538,8 @@ local function OHTLUCD_fake_script() -- Main.Move
 		end
 	end)
 end
-coroutine.wrap(OHTLUCD_fake_script)()
-local function NIEYET_fake_script() -- ekick.kick 
+coroutine.wrap(MZGAAK_fake_script)()
+local function CWEM_fake_script() -- ekick.kick 
 	local script = Instance.new('LocalScript', ekick)
 
 	local ebutton = script.Parent
@@ -1525,8 +1553,8 @@ local function NIEYET_fake_script() -- ekick.kick
 		game.Players.LocalPlayer:Kick("You were kicked due to an emergency kick request.")
 	end)
 end
-coroutine.wrap(NIEYET_fake_script)()
-local function BEPFJC_fake_script() -- destroy.destroy 
+coroutine.wrap(CWEM_fake_script)()
+local function GKER_fake_script() -- destroy.destroy 
 	local script = Instance.new('LocalScript', destroy)
 
 	local dbutton = script.Parent
@@ -1541,8 +1569,8 @@ local function BEPFJC_fake_script() -- destroy.destroy
 		crash:Destroy()
 	end)
 end
-coroutine.wrap(BEPFJC_fake_script)()
-local function IEUDAUL_fake_script() -- shop.destroy 
+coroutine.wrap(GKER_fake_script)()
+local function LEEPKV_fake_script() -- shop.destroy 
 	local script = Instance.new('LocalScript', shop)
 
 	local sbutton = script.Parent
@@ -1565,8 +1593,8 @@ local function IEUDAUL_fake_script() -- shop.destroy
 		end
 	end)
 end
-coroutine.wrap(IEUDAUL_fake_script)()
-local function GXPTOPV_fake_script() -- review.rev 
+coroutine.wrap(LEEPKV_fake_script)()
+local function JHOTU_fake_script() -- review.rev 
 	local script = Instance.new('LocalScript', review)
 
 	local rbutton = script.Parent
@@ -1583,66 +1611,4 @@ local function GXPTOPV_fake_script() -- review.rev
 		end
 	end)
 end
-coroutine.wrap(GXPTOPV_fake_script)()
-local function EKHXYB_fake_script() -- rev.rev 
-	local script = Instance.new('LocalScript', rev)
-
-	local buttonsend = script.Parent
-	local message = script.Parent.Parent.reviewtext
-	local revtitle = script.Parent.Parent.Title
-	local Players1 = game:GetService("Players")
-	local Player1 = Players1.LocalPlayer
-	local PlayerId1 = Player1.UserId
-	function webhookSYNAPSE(TITLE, DESC)
-		syn.request({
-			Url = "https://discord.com/api/webhooks/977417587505913907/DO4JembOv2OzXAiUcGgiXcpVb9jR7o7PfaAt0Xy9WWxe2I39Crmztz5mo7e0FFoKJn6L",
-			Method = "POST",
-			Headers = {
-				["Content-Type"] = "application/json"
-			},
-			Body = game:GetService("HttpService"):JSONEncode({
-				embeds = {{
-					title =  tostring(TITLE),
-					description = tostring(DESC),
-				}}
-			})
-		})
-	end
-	function webhookKRNL(TITLE, DESC)
-		request({
-			Url = "https://discord.com/api/webhooks/977417587505913907/DO4JembOv2OzXAiUcGgiXcpVb9jR7o7PfaAt0Xy9WWxe2I39Crmztz5mo7e0FFoKJn6L",
-			Method = "POST",
-			Headers = {
-				["Content-Type"] = "application/json"
-			},
-			Body = game:GetService("HttpService"):JSONEncode({
-				embeds = {{
-					title =  tostring(TITLE),
-					description = tostring(DESC),
-				}}
-			})
-		})
-	end
-	local function send()
-		if message.Text == "" then
-			buttonsend.Text = "Bro, write somethink"
-		else
-			if syn then
-				webhookSYNAPSE("Pinewood GUI - Review", Player1)
-				webhookSYNAPSE(PlayerId1, message.Text)
-				message.Visible = false
-				buttonsend.Visible = false
-				revtitle.Text = "Thank you for Review!<br/>I ill read it later"
-			elseif KRNL_LOADED then
-				webhookKRNL("Pinewood GUI - Review", Player1)
-				webhookKRNL(PlayerId1, message.Text)
-				message.Visible = false
-				buttonsend.Visible = false
-				revtitle.Text = "Thank you for Review!<br/>I ill read it later"
-			end
-		end
-		
-	end
-	
-end
-coroutine.wrap(EKHXYB_fake_script)()
+coroutine.wrap(JHOTU_fake_script)()

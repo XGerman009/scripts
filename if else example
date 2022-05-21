@@ -1,0 +1,1650 @@
+
+local GuiTablet_SX = Instance.new("ScreenGui")
+local Main = Instance.new("Frame")
+local Main_2 = Instance.new("ImageLabel")
+local Credit = Instance.new("TextLabel")
+local Cor1 = Instance.new("UICorner")
+local Full = Instance.new("Frame")
+local Cor2 = Instance.new("UICorner")
+local INFO = Instance.new("Frame")
+local CoolantControl = Instance.new("Frame")
+local Desc = Instance.new("TextLabel")
+local Value = Instance.new("TextLabel")
+local CoolantLevel = Instance.new("Frame")
+local Desc_2 = Instance.new("TextLabel")
+local Value_2 = Instance.new("TextLabel")
+local CoolantPumps = Instance.new("Frame")
+local Desc_3 = Instance.new("TextLabel")
+local Value_3 = Instance.new("TextLabel")
+local CoolantSupply = Instance.new("Frame")
+local Desc_4 = Instance.new("TextLabel")
+local Value_4 = Instance.new("TextLabel")
+local Fans = Instance.new("Frame")
+local Desc_5 = Instance.new("TextLabel")
+local Value_5 = Instance.new("TextLabel")
+local Lasers = Instance.new("Frame")
+local Desc_6 = Instance.new("TextLabel")
+local Value_6 = Instance.new("TextLabel")
+local ReactorPower = Instance.new("Frame")
+local Desc_7 = Instance.new("TextLabel")
+local Value_7 = Instance.new("TextLabel")
+local TempChange = Instance.new("Frame")
+local Desc_8 = Instance.new("TextLabel")
+local Value_8 = Instance.new("TextLabel")
+local Temperature = Instance.new("Frame")
+local Desc_9 = Instance.new("TextLabel")
+local Value_9 = Instance.new("TextLabel")
+local Cor3 = Instance.new("UICorner")
+local UIPadding = Instance.new("UIPadding")
+local List1 = Instance.new("UIListLayout")
+local Title = Instance.new("TextLabel")
+local LogoClose = Instance.new("ImageButton")
+local EventButton = Instance.new("TextButton")
+local corn = Instance.new("UICorner")
+local Status = Instance.new("TextLabel")
+local Cor1_2 = Instance.new("UICorner")
+local SEvent_S = Instance.new("Frame")
+local Main_3 = Instance.new("ImageLabel")
+local Cor1_3 = Instance.new("UICorner")
+local StatusOfEvents = Instance.new("Frame")
+local Name = Instance.new("Folder")
+local Meltdown = Instance.new("TextLabel")
+local Aliens = Instance.new("TextLabel")
+local Freezedown = Instance.new("TextLabel")
+local Earthquake = Instance.new("TextLabel")
+local Plasma = Instance.new("TextLabel")
+local Magma = Instance.new("TextLabel")
+local Neurotoxin = Instance.new("TextLabel")
+local Blackout = Instance.new("TextLabel")
+local RadFlood = Instance.new("TextLabel")
+local Status_2 = Instance.new("Folder")
+local Aliens_S = Instance.new("TextLabel")
+local Blackout_S = Instance.new("TextLabel")
+local Earthquake_S = Instance.new("TextLabel")
+local Freezedown_S = Instance.new("TextLabel")
+local Magma_S = Instance.new("TextLabel")
+local Neurotoxin_S = Instance.new("TextLabel")
+local Plasma_S = Instance.new("TextLabel")
+local Meltdown_S = Instance.new("TextLabel")
+local RadFlood_S = Instance.new("TextLabel")
+local Title_2 = Instance.new("TextLabel")
+local Cor1_4 = Instance.new("UICorner")
+local SButton = Instance.new("Frame")
+local Main_4 = Instance.new("ImageLabel")
+local Cor1_5 = Instance.new("UICorner")
+local ekick = Instance.new("TextButton")
+local cock = Instance.new("UICorner")
+local destroy = Instance.new("TextButton")
+local cock_2 = Instance.new("UICorner")
+local shop = Instance.new("TextButton")
+local cock_3 = Instance.new("UICorner")
+local review = Instance.new("TextButton")
+local cock_4 = Instance.new("UICorner")
+local Cor1_6 = Instance.new("UICorner")
+local ReviewGUI = Instance.new("Frame")
+local Main_5 = Instance.new("ImageLabel")
+local Cor1_7 = Instance.new("UICorner")
+local rev = Instance.new("TextButton")
+local cock_5 = Instance.new("UICorner")
+local Title_3 = Instance.new("TextLabel")
+local reviewtext = Instance.new("TextBox")
+local Cor1_8 = Instance.new("UICorner")
+local SSW = Instance.new("Frame")
+local cock_6 = Instance.new("Frame")
+local Main_6 = Instance.new("ImageLabel")
+local Cor1_9 = Instance.new("UICorner")
+local gTitle = Instance.new("TextLabel")
+local gText = Instance.new("TextLabel")
+local gtimer = Instance.new("TextLabel")
+local Cor1_10 = Instance.new("UICorner")
+Value.RichText = true
+Value_2.RichText = true
+Value_6.RichText = true
+Value_7.RichText = true
+Value_8.RichText = true
+Value_9.RichText = true
+Value_3.RichText = true
+Value_4.RichText = true
+Value_5.RichText = true
+Title.RichText = true
+Title_2.RichText = true
+destroy.RichText = true
+shop.RichText = true
+ekick.RichText = true
+EventButton.RichText = true
+Title_3.RichText = true
+review.RichText = true
+rev.RichText = true
+reviewtext.RichText = true
+
+
+
+--Properties:
+
+GuiTablet_SX.Name = "GuiTablet_SX"
+GuiTablet_SX.Parent = game.CoreGui
+GuiTablet_SX.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Main.Name = "Main"
+Main.Parent = GuiTablet_SX
+Main.Active = true
+Main.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Main.Position = UDim2.new(0.743918657, 0, 0.268085063, 0)
+Main.Size = UDim2.new(0, 297, 0, 445)
+
+Main_2.Name = "Main"
+Main_2.Parent = Main
+Main_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_2.Position = UDim2.new(0.0259606969, 0, 0.0157303363, 0)
+Main_2.Size = UDim2.new(0.952861965, 0, 0.977528095, 0)
+Main_2.Image = "rbxassetid://437131814"
+Main_2.ImageColor3 = Color3.fromRGB(42, 59, 115)
+Main_2.ScaleType = Enum.ScaleType.Crop
+Main_2.TileSize = UDim2.new(0, 20, 0, 20)
+
+Credit.Name = "Credit"
+Credit.Parent = Main_2
+Credit.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Credit.BackgroundTransparency = 1.000
+Credit.Position = UDim2.new(0, 0, 0.954712749, 0)
+Credit.Size = UDim2.new(1, 0, 0.0291953888, 0)
+Credit.Font = Enum.Font.GothamBold
+Credit.Text = "by pizza_man#7693 | Version: 1"
+Credit.TextColor3 = Color3.fromRGB(255, 255, 255)
+Credit.TextSize = 13.000
+Credit.TextTransparency = 0.740
+Credit.TextWrapped = true
+
+Cor1.CornerRadius = UDim.new(0, 10)
+Cor1.Name = "Cor1"
+Cor1.Parent = Main_2
+
+Full.Name = "Full"
+Full.Parent = Main_2
+Full.BackgroundColor3 = Color3.fromRGB(19, 21, 47)
+Full.BackgroundTransparency = 1.000
+Full.Position = UDim2.new(0.0266774856, 0, 0, 0)
+Full.Size = UDim2.new(0, 274, 0, 422)
+
+Cor2.CornerRadius = UDim.new(0, 10)
+Cor2.Name = "Cor2"
+Cor2.Parent = Full
+
+INFO.Name = "INFO"
+INFO.Parent = Full
+INFO.BackgroundColor3 = Color3.fromRGB(19, 21, 47)
+INFO.BackgroundTransparency = 1.000
+INFO.BorderColor3 = Color3.fromRGB(19, 21, 47)
+INFO.Position = UDim2.new(0.0120787239, 0, 0.254547626, 0)
+INFO.Size = UDim2.new(0, 266, 0, 307)
+
+CoolantControl.Name = "CoolantControl"
+CoolantControl.Parent = INFO
+CoolantControl.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CoolantControl.BackgroundTransparency = 1.000
+CoolantControl.LayoutOrder = 6
+CoolantControl.Size = UDim2.new(1, 0, 0.100000001, 0)
+
+Desc.Name = "Desc"
+Desc.Parent = CoolantControl
+Desc.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc.BackgroundTransparency = 1.000
+Desc.Position = UDim2.new(0, 0, 0.200000003, 0)
+Desc.Size = UDim2.new(0.550000012, 0, 0.600000024, 0)
+Desc.Font = Enum.Font.SourceSansBold
+Desc.Text = "Coolant Status:"
+Desc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc.TextScaled = true
+Desc.TextSize = 26.000
+Desc.TextWrapped = true
+Desc.TextXAlignment = Enum.TextXAlignment.Left
+
+Value.Name = "Value"
+Value.Parent = CoolantControl
+Value.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value.BackgroundTransparency = 1.000
+Value.Position = UDim2.new(0.550000012, 0, 0.200000003, 0)
+Value.Size = UDim2.new(0.449999988, 0, 0.600000024, 0)
+Value.Font = Enum.Font.Code
+Value.Text = "<font color=\"#ff3232\">NO INFO</font>"
+Value.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value.TextScaled = true
+Value.TextSize = 14.000
+Value.TextWrapped = true
+Value.TextXAlignment = Enum.TextXAlignment.Right
+
+CoolantLevel.Name = "CoolantLevel"
+CoolantLevel.Parent = INFO
+CoolantLevel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CoolantLevel.BackgroundTransparency = 1.000
+CoolantLevel.LayoutOrder = 4
+CoolantLevel.Size = UDim2.new(1, 0, 0.100000001, 0)
+
+Desc_2.Name = "Desc"
+Desc_2.Parent = CoolantLevel
+Desc_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc_2.BackgroundTransparency = 1.000
+Desc_2.Position = UDim2.new(0, 0, 0.200000003, 0)
+Desc_2.Size = UDim2.new(0.550000012, 0, 0.600000024, 0)
+Desc_2.Font = Enum.Font.SourceSansBold
+Desc_2.Text = "Coolant Levels:"
+Desc_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc_2.TextScaled = true
+Desc_2.TextSize = 14.000
+Desc_2.TextWrapped = true
+Desc_2.TextXAlignment = Enum.TextXAlignment.Left
+
+Value_2.Name = "Value"
+Value_2.Parent = CoolantLevel
+Value_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_2.BackgroundTransparency = 1.000
+Value_2.Position = UDim2.new(0.550000012, 0, 0.200000003, 0)
+Value_2.Size = UDim2.new(0.449999988, 0, 0.600000024, 0)
+Value_2.Font = Enum.Font.Code
+Value_2.Text = "<font color=\"#ff3232\">NO INFO</font>"
+Value_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value_2.TextScaled = true
+Value_2.TextSize = 14.000
+Value_2.TextWrapped = true
+Value_2.TextXAlignment = Enum.TextXAlignment.Right
+
+CoolantPumps.Name = "CoolantPumps"
+CoolantPumps.Parent = INFO
+CoolantPumps.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CoolantPumps.BackgroundTransparency = 1.000
+CoolantPumps.LayoutOrder = 5
+CoolantPumps.Size = UDim2.new(1, 0, 0.100000001, 0)
+
+Desc_3.Name = "Desc"
+Desc_3.Parent = CoolantPumps
+Desc_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc_3.BackgroundTransparency = 1.000
+Desc_3.Position = UDim2.new(0, 0, 0.200000003, 0)
+Desc_3.Size = UDim2.new(0.550000012, 0, 0.600000024, 0)
+Desc_3.Font = Enum.Font.SourceSansBold
+Desc_3.Text = "Coolant Pumps:"
+Desc_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc_3.TextScaled = true
+Desc_3.TextSize = 14.000
+Desc_3.TextWrapped = true
+Desc_3.TextXAlignment = Enum.TextXAlignment.Left
+
+Value_3.Name = "Value"
+Value_3.Parent = CoolantPumps
+Value_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_3.BackgroundTransparency = 1.000
+Value_3.Position = UDim2.new(0.550000012, 0, 0.200000003, 0)
+Value_3.Size = UDim2.new(0.449999988, 0, 0.600000024, 0)
+Value_3.Font = Enum.Font.Code
+Value_3.Text = "<font color=\"#ff3232\">NO INFO</font>"
+Value_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value_3.TextScaled = true
+Value_3.TextSize = 14.000
+Value_3.TextWrapped = true
+Value_3.TextXAlignment = Enum.TextXAlignment.Right
+
+CoolantSupply.Name = "CoolantSupply"
+CoolantSupply.Parent = INFO
+CoolantSupply.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CoolantSupply.BackgroundTransparency = 1.000
+CoolantSupply.LayoutOrder = 3
+CoolantSupply.Size = UDim2.new(1, 0, 0.100000001, 0)
+
+Desc_4.Name = "Desc"
+Desc_4.Parent = CoolantSupply
+Desc_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc_4.BackgroundTransparency = 1.000
+Desc_4.Position = UDim2.new(0, 0, 0.200000003, 0)
+Desc_4.Size = UDim2.new(0.550000012, 0, 0.600000024, 0)
+Desc_4.Font = Enum.Font.SourceSansBold
+Desc_4.Text = "Coolant Supply:"
+Desc_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc_4.TextScaled = true
+Desc_4.TextSize = 14.000
+Desc_4.TextWrapped = true
+Desc_4.TextXAlignment = Enum.TextXAlignment.Left
+
+Value_4.Name = "Value"
+Value_4.Parent = CoolantSupply
+Value_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_4.BackgroundTransparency = 1.000
+Value_4.Position = UDim2.new(0.550000012, 0, 0.200000003, 0)
+Value_4.Size = UDim2.new(0.449999988, 0, 0.600000024, 0)
+Value_4.Font = Enum.Font.Code
+Value_4.Text = "<font color=\"#ff3232\">NO INFO</font>"
+Value_4.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value_4.TextScaled = true
+Value_4.TextSize = 14.000
+Value_4.TextWrapped = true
+Value_4.TextXAlignment = Enum.TextXAlignment.Right
+
+Fans.Name = "Fans"
+Fans.Parent = INFO
+Fans.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Fans.BackgroundTransparency = 1.000
+Fans.LayoutOrder = 7
+Fans.Size = UDim2.new(1, 0, 0.100000001, 0)
+
+Desc_5.Name = "Desc"
+Desc_5.Parent = Fans
+Desc_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc_5.BackgroundTransparency = 1.000
+Desc_5.Position = UDim2.new(0, 0, 0.200000003, 0)
+Desc_5.Size = UDim2.new(0.550000012, 0, 0.600000024, 0)
+Desc_5.Font = Enum.Font.SourceSansBold
+Desc_5.Text = "Fan Status:"
+Desc_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc_5.TextScaled = true
+Desc_5.TextSize = 14.000
+Desc_5.TextWrapped = true
+Desc_5.TextXAlignment = Enum.TextXAlignment.Left
+
+Value_5.Name = "Value"
+Value_5.Parent = Fans
+Value_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_5.BackgroundTransparency = 1.000
+Value_5.Position = UDim2.new(0.550000012, 0, 0.200000003, 0)
+Value_5.Size = UDim2.new(0.449999988, 0, 0.600000024, 0)
+Value_5.Font = Enum.Font.Code
+Value_5.Text = "<font color=\"#ff3232\">NO INFO</font>"
+Value_5.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value_5.TextScaled = true
+Value_5.TextSize = 14.000
+Value_5.TextWrapped = true
+Value_5.TextXAlignment = Enum.TextXAlignment.Right
+
+Lasers.Name = "Lasers"
+Lasers.Parent = INFO
+Lasers.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lasers.BackgroundTransparency = 1.000
+Lasers.LayoutOrder = 2
+Lasers.Size = UDim2.new(1, 0, 0.100000001, 0)
+
+Desc_6.Name = "Desc"
+Desc_6.Parent = Lasers
+Desc_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc_6.BackgroundTransparency = 1.000
+Desc_6.Position = UDim2.new(0, 0, 0.200000003, 0)
+Desc_6.Size = UDim2.new(0.550000012, 0, 0.600000024, 0)
+Desc_6.Font = Enum.Font.SourceSansBold
+Desc_6.Text = "Reactor Lasers:"
+Desc_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc_6.TextScaled = true
+Desc_6.TextSize = 14.000
+Desc_6.TextWrapped = true
+Desc_6.TextXAlignment = Enum.TextXAlignment.Left
+
+Value_6.Name = "Value"
+Value_6.Parent = Lasers
+Value_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_6.BackgroundTransparency = 1.000
+Value_6.Position = UDim2.new(0.550000012, 0, 0.200000003, 0)
+Value_6.Size = UDim2.new(0.449999988, 0, 0.600000024, 0)
+Value_6.Font = Enum.Font.Code
+Value_6.Text = "<font color=\"#ff3232\">NO INFO</font>"
+Value_6.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value_6.TextScaled = true
+Value_6.TextSize = 14.000
+Value_6.TextWrapped = true
+Value_6.TextXAlignment = Enum.TextXAlignment.Right
+
+ReactorPower.Name = "ReactorPower"
+ReactorPower.Parent = INFO
+ReactorPower.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReactorPower.BackgroundTransparency = 1.000
+ReactorPower.LayoutOrder = 1
+ReactorPower.Size = UDim2.new(1, 0, 0.100000001, 0)
+
+Desc_7.Name = "Desc"
+Desc_7.Parent = ReactorPower
+Desc_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc_7.BackgroundTransparency = 1.000
+Desc_7.Position = UDim2.new(0, 0, 0.200000003, 0)
+Desc_7.Size = UDim2.new(0.550000012, 0, 0.600000024, 0)
+Desc_7.Font = Enum.Font.SourceSansBold
+Desc_7.Text = "Reactor Power:"
+Desc_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc_7.TextScaled = true
+Desc_7.TextSize = 14.000
+Desc_7.TextWrapped = true
+Desc_7.TextXAlignment = Enum.TextXAlignment.Left
+
+Value_7.Name = "Value"
+Value_7.Parent = ReactorPower
+Value_7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_7.BackgroundTransparency = 1.000
+Value_7.Position = UDim2.new(0.550000012, 0, 0.200000003, 0)
+Value_7.Size = UDim2.new(0.449999988, 0, 0.600000024, 0)
+Value_7.Font = Enum.Font.Code
+Value_7.Text = "<font color=\"#ff3232\">NO INFO</font>"
+Value_7.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value_7.TextScaled = true
+Value_7.TextSize = 14.000
+Value_7.TextWrapped = true
+Value_7.TextXAlignment = Enum.TextXAlignment.Right
+
+TempChange.Name = "TempChange"
+TempChange.Parent = INFO
+TempChange.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TempChange.BackgroundTransparency = 1.000
+TempChange.Size = UDim2.new(1, 0, 0.100000001, 0)
+
+Desc_8.Name = "Desc"
+Desc_8.Parent = TempChange
+Desc_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc_8.BackgroundTransparency = 1.000
+Desc_8.Position = UDim2.new(0, 0, 0.200000003, 0)
+Desc_8.Size = UDim2.new(0.550000012, 0, 0.600000024, 0)
+Desc_8.Font = Enum.Font.SourceSansBold
+Desc_8.Text = "Temp Status:"
+Desc_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc_8.TextScaled = true
+Desc_8.TextSize = 14.000
+Desc_8.TextWrapped = true
+Desc_8.TextXAlignment = Enum.TextXAlignment.Left
+
+Value_8.Name = "Value"
+Value_8.Parent = TempChange
+Value_8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_8.BackgroundTransparency = 1.000
+Value_8.Position = UDim2.new(0.550000012, 0, 0.200000003, 0)
+Value_8.Size = UDim2.new(0.449999988, 0, 0.600000024, 0)
+Value_8.Font = Enum.Font.Code
+Value_8.Text = "<font color=\"#ff3232\">NO INFO</font>"
+Value_8.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value_8.TextScaled = true
+Value_8.TextSize = 14.000
+Value_8.TextWrapped = true
+Value_8.TextXAlignment = Enum.TextXAlignment.Right
+
+Temperature.Name = "Temperature"
+Temperature.Parent = INFO
+Temperature.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Temperature.BackgroundTransparency = 1.000
+Temperature.LayoutOrder = -1
+Temperature.Position = UDim2.new(0, 0, 0.0499999821, 0)
+Temperature.Size = UDim2.new(1, 0, 0.100000009, 0)
+
+Desc_9.Name = "Desc"
+Desc_9.Parent = Temperature
+Desc_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Desc_9.BackgroundTransparency = 1.000
+Desc_9.Position = UDim2.new(0, 0, 0.200000003, 0)
+Desc_9.Size = UDim2.new(0.550000012, 0, 0.600000024, 0)
+Desc_9.Font = Enum.Font.SourceSansBold
+Desc_9.Text = "Temperature:"
+Desc_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Desc_9.TextScaled = true
+Desc_9.TextSize = 14.000
+Desc_9.TextWrapped = true
+Desc_9.TextXAlignment = Enum.TextXAlignment.Left
+
+Value_9.Name = "Value"
+Value_9.Parent = Temperature
+Value_9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Value_9.BackgroundTransparency = 1.000
+Value_9.Position = UDim2.new(0.550000012, 0, 0.200000003, 0)
+Value_9.Size = UDim2.new(0.449999988, 0, 0.600000024, 0)
+Value_9.Font = Enum.Font.Code
+Value_9.Text = "<font color=\"#ff3232\">NO INFO</font>"
+Value_9.TextColor3 = Color3.fromRGB(255, 255, 255)
+Value_9.TextScaled = true
+Value_9.TextSize = 14.000
+Value_9.TextWrapped = true
+Value_9.TextXAlignment = Enum.TextXAlignment.Right
+
+Cor3.CornerRadius = UDim.new(0, -15)
+Cor3.Name = "Cor3"
+Cor3.Parent = INFO
+
+UIPadding.Parent = INFO
+UIPadding.PaddingBottom = UDim.new(0, 10)
+UIPadding.PaddingLeft = UDim.new(0, 10)
+UIPadding.PaddingRight = UDim.new(0, 10)
+UIPadding.PaddingTop = UDim.new(0, 10)
+
+List1.Name = "List1"
+List1.Parent = INFO
+List1.SortOrder = Enum.SortOrder.LayoutOrder
+List1.VerticalAlignment = Enum.VerticalAlignment.Center
+
+Title.Name = "Title"
+Title.Parent = Full
+Title.Active = true
+Title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title.BackgroundTransparency = 1.000
+Title.Position = UDim2.new(0, 0, 0.169370472, 0)
+Title.Size = UDim2.new(1, 0, 0.0951573774, 0)
+Title.Font = Enum.Font.GothamBlack
+Title.Text = "Pinewood Builders<br/>Tablet remake GUI"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+LogoClose.Name = "LogoClose"
+LogoClose.Parent = Full
+LogoClose.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LogoClose.BackgroundTransparency = 1.000
+LogoClose.BorderSizePixel = 0
+LogoClose.Position = UDim2.new(0.397810161, 0, 0.0290556904, 0)
+LogoClose.Size = UDim2.new(0, 55, 0, 55)
+LogoClose.Image = "http://www.roblox.com/asset/?id=5126729154"
+
+EventButton.Name = "EventButton"
+EventButton.Parent = Full
+EventButton.BackgroundColor3 = Color3.fromRGB(39, 50, 154)
+EventButton.BackgroundTransparency = 0.350
+EventButton.Position = UDim2.new(0, 0, 0.00947867334, 0)
+EventButton.Size = UDim2.new(0, 105, 0, 34)
+EventButton.Font = Enum.Font.SourceSansBold
+EventButton.Text = "Open Status<br/>of events"
+EventButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+EventButton.TextSize = 14.000
+EventButton.TextTransparency = 0.530
+
+corn.Name = "corn"
+corn.Parent = EventButton
+
+Status.Name = "Status"
+Status.Parent = Main_2
+Status.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Status.BackgroundTransparency = 1.000
+Status.Position = UDim2.new(0, 0, 0.901839197, 0)
+Status.Size = UDim2.new(1, 0, 0.0291953888, 0)
+Status.Font = Enum.Font.GothamBold
+Status.Text = "No info!"
+Status.TextColor3 = Color3.fromRGB(255, 255, 255)
+Status.TextSize = 13.000
+Status.TextTransparency = 0.740
+Status.TextWrapped = true
+
+Cor1_2.CornerRadius = UDim.new(0, 10)
+Cor1_2.Name = "Cor1"
+Cor1_2.Parent = Main
+
+SEvent_S.Name = "SEvent_S"
+SEvent_S.Parent = Main
+SEvent_S.Active = true
+SEvent_S.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SEvent_S.Position = UDim2.new(-1.09560072, 0, 0.288775325, 0)
+SEvent_S.Size = UDim2.new(0, 296, 0, 316)
+SEvent_S.ZIndex = 0
+
+Main_3.Name = "Main"
+Main_3.Parent = SEvent_S
+Main_3.Active = true
+Main_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_3.Position = UDim2.new(0.0225822926, 0, 0.00940122083, 0)
+Main_3.Size = UDim2.new(0.952861965, 0, 0.977528095, 0)
+Main_3.Image = "rbxassetid://437131814"
+Main_3.ImageColor3 = Color3.fromRGB(42, 59, 115)
+Main_3.ScaleType = Enum.ScaleType.Crop
+Main_3.TileSize = UDim2.new(0, 20, 0, 20)
+
+Cor1_3.CornerRadius = UDim.new(0, 10)
+Cor1_3.Name = "Cor1"
+Cor1_3.Parent = Main_3
+
+StatusOfEvents.Name = "StatusOfEvents"
+StatusOfEvents.Parent = Main_3
+StatusOfEvents.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StatusOfEvents.BackgroundTransparency = 1.000
+StatusOfEvents.BorderSizePixel = 0
+StatusOfEvents.Position = UDim2.new(0, 0, 0.157088161, 0)
+StatusOfEvents.Size = UDim2.new(0, 282, 0, 261)
+
+Name.Name = "Name"
+Name.Parent = StatusOfEvents
+
+Meltdown.Name = "Meltdown"
+Meltdown.Parent = Name
+Meltdown.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Meltdown.BackgroundTransparency = 1.000
+Meltdown.Position = UDim2.new(0.0673758835, 0, 0, 0)
+Meltdown.Size = UDim2.new(0, 122, 0, 28)
+Meltdown.Font = Enum.Font.SourceSansBold
+Meltdown.Text = "Meltdown status:"
+Meltdown.TextColor3 = Color3.fromRGB(255, 255, 255)
+Meltdown.TextSize = 16.000
+Meltdown.TextXAlignment = Enum.TextXAlignment.Left
+
+Aliens.Name = "Aliens"
+Aliens.Parent = Name
+Aliens.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Aliens.BackgroundTransparency = 1.000
+Aliens.Position = UDim2.new(0.0673758835, 0, 0.214559391, 0)
+Aliens.Size = UDim2.new(0, 122, 0, 28)
+Aliens.Font = Enum.Font.SourceSansBold
+Aliens.Text = "Aliens status:"
+Aliens.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aliens.TextSize = 16.000
+Aliens.TextXAlignment = Enum.TextXAlignment.Left
+
+Freezedown.Name = "Freezedown"
+Freezedown.Parent = Name
+Freezedown.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Freezedown.BackgroundTransparency = 1.000
+Freezedown.Position = UDim2.new(0.0673758835, 0, 0.107279696, 0)
+Freezedown.Size = UDim2.new(0, 122, 0, 28)
+Freezedown.Font = Enum.Font.SourceSansBold
+Freezedown.Text = "Freezedown status:"
+Freezedown.TextColor3 = Color3.fromRGB(255, 255, 255)
+Freezedown.TextSize = 16.000
+Freezedown.TextXAlignment = Enum.TextXAlignment.Left
+
+Earthquake.Name = "Earthquake"
+Earthquake.Parent = Name
+Earthquake.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Earthquake.BackgroundTransparency = 1.000
+Earthquake.Position = UDim2.new(0.0673758835, 0, 0.321839094, 0)
+Earthquake.Size = UDim2.new(0, 122, 0, 28)
+Earthquake.Font = Enum.Font.SourceSansBold
+Earthquake.Text = "Earthquake  status:"
+Earthquake.TextColor3 = Color3.fromRGB(255, 255, 255)
+Earthquake.TextSize = 16.000
+Earthquake.TextXAlignment = Enum.TextXAlignment.Left
+
+Plasma.Name = "Plasma"
+Plasma.Parent = Name
+Plasma.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Plasma.BackgroundTransparency = 1.000
+Plasma.Position = UDim2.new(0.0673758835, 0, 0.858237565, 0)
+Plasma.Size = UDim2.new(0, 122, 0, 28)
+Plasma.Font = Enum.Font.SourceSansBold
+Plasma.Text = "Plasma  status:"
+Plasma.TextColor3 = Color3.fromRGB(255, 255, 255)
+Plasma.TextSize = 16.000
+Plasma.TextXAlignment = Enum.TextXAlignment.Left
+
+Magma.Name = "Magma"
+Magma.Parent = Name
+Magma.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Magma.BackgroundTransparency = 1.000
+Magma.Position = UDim2.new(0.0673758835, 0, 0.750957847, 0)
+Magma.Size = UDim2.new(0, 122, 0, 28)
+Magma.Font = Enum.Font.SourceSansBold
+Magma.Text = "Magma status:"
+Magma.TextColor3 = Color3.fromRGB(255, 255, 255)
+Magma.TextSize = 16.000
+Magma.TextXAlignment = Enum.TextXAlignment.Left
+
+Neurotoxin.Name = "Neurotoxin"
+Neurotoxin.Parent = Name
+Neurotoxin.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Neurotoxin.BackgroundTransparency = 1.000
+Neurotoxin.Position = UDim2.new(0.0673758835, 0, 0.429118782, 0)
+Neurotoxin.Size = UDim2.new(0, 122, 0, 28)
+Neurotoxin.Font = Enum.Font.SourceSansBold
+Neurotoxin.Text = "Neurotoxin status:"
+Neurotoxin.TextColor3 = Color3.fromRGB(255, 255, 255)
+Neurotoxin.TextSize = 16.000
+Neurotoxin.TextXAlignment = Enum.TextXAlignment.Left
+
+Blackout.Name = "Blackout"
+Blackout.Parent = Name
+Blackout.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Blackout.BackgroundTransparency = 1.000
+Blackout.Position = UDim2.new(0.0673758835, 0, 0.643678188, 0)
+Blackout.Size = UDim2.new(0, 122, 0, 28)
+Blackout.Font = Enum.Font.SourceSansBold
+Blackout.Text = "Blackout status:"
+Blackout.TextColor3 = Color3.fromRGB(255, 255, 255)
+Blackout.TextSize = 16.000
+Blackout.TextXAlignment = Enum.TextXAlignment.Left
+
+RadFlood.Name = "Rad Flood"
+RadFlood.Parent = Name
+RadFlood.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RadFlood.BackgroundTransparency = 1.000
+RadFlood.Position = UDim2.new(0.0673758835, 0, 0.53639847, 0)
+RadFlood.Size = UDim2.new(0, 122, 0, 28)
+RadFlood.Font = Enum.Font.SourceSansBold
+RadFlood.Text = "Rad Flood status:"
+RadFlood.TextColor3 = Color3.fromRGB(255, 255, 255)
+RadFlood.TextSize = 16.000
+RadFlood.TextXAlignment = Enum.TextXAlignment.Left
+
+Status_2.Name = "Status"
+Status_2.Parent = StatusOfEvents
+
+Aliens_S.Name = "Aliens_S"
+Aliens_S.Parent = Status_2
+Aliens_S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Aliens_S.BackgroundTransparency = 1.000
+Aliens_S.Position = UDim2.new(0.499999791, 0, 0.214559391, 0)
+Aliens_S.Size = UDim2.new(0, 122, 0, 28)
+Aliens_S.Font = Enum.Font.Code
+Aliens_S.Text = ""
+Aliens_S.TextColor3 = Color3.fromRGB(255, 255, 255)
+Aliens_S.TextSize = 16.000
+Aliens_S.TextXAlignment = Enum.TextXAlignment.Right
+
+Blackout_S.Name = "Blackout_S"
+Blackout_S.Parent = Status_2
+Blackout_S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Blackout_S.BackgroundTransparency = 1.000
+Blackout_S.Position = UDim2.new(0.499999791, 0, 0.643678188, 0)
+Blackout_S.Size = UDim2.new(0, 122, 0, 28)
+Blackout_S.Font = Enum.Font.Code
+Blackout_S.Text = ""
+Blackout_S.TextColor3 = Color3.fromRGB(255, 255, 255)
+Blackout_S.TextSize = 16.000
+Blackout_S.TextXAlignment = Enum.TextXAlignment.Right
+
+Earthquake_S.Name = "Earthquake_S"
+Earthquake_S.Parent = Status_2
+Earthquake_S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Earthquake_S.BackgroundTransparency = 1.000
+Earthquake_S.Position = UDim2.new(0.499999791, 0, 0.321839094, 0)
+Earthquake_S.Size = UDim2.new(0, 122, 0, 28)
+Earthquake_S.Font = Enum.Font.Code
+Earthquake_S.Text = ""
+Earthquake_S.TextColor3 = Color3.fromRGB(255, 255, 255)
+Earthquake_S.TextSize = 16.000
+Earthquake_S.TextXAlignment = Enum.TextXAlignment.Right
+
+Freezedown_S.Name = "Freezedown_S"
+Freezedown_S.Parent = Status_2
+Freezedown_S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Freezedown_S.BackgroundTransparency = 1.000
+Freezedown_S.Position = UDim2.new(0.499999791, 0, 0.107279696, 0)
+Freezedown_S.Size = UDim2.new(0, 122, 0, 28)
+Freezedown_S.Font = Enum.Font.Code
+Freezedown_S.Text = ""
+Freezedown_S.TextColor3 = Color3.fromRGB(255, 255, 255)
+Freezedown_S.TextSize = 16.000
+Freezedown_S.TextXAlignment = Enum.TextXAlignment.Right
+
+Magma_S.Name = "Magma_S"
+Magma_S.Parent = Status_2
+Magma_S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Magma_S.BackgroundTransparency = 1.000
+Magma_S.Position = UDim2.new(0.499999791, 0, 0.750957847, 0)
+Magma_S.Size = UDim2.new(0, 122, 0, 28)
+Magma_S.Font = Enum.Font.Code
+Magma_S.Text = ""
+Magma_S.TextColor3 = Color3.fromRGB(255, 255, 255)
+Magma_S.TextSize = 16.000
+Magma_S.TextXAlignment = Enum.TextXAlignment.Right
+
+Neurotoxin_S.Name = "Neurotoxin_S"
+Neurotoxin_S.Parent = Status_2
+Neurotoxin_S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Neurotoxin_S.BackgroundTransparency = 1.000
+Neurotoxin_S.Position = UDim2.new(0.499999791, 0, 0.429118782, 0)
+Neurotoxin_S.Size = UDim2.new(0, 122, 0, 28)
+Neurotoxin_S.Font = Enum.Font.Code
+Neurotoxin_S.Text = ""
+Neurotoxin_S.TextColor3 = Color3.fromRGB(255, 255, 255)
+Neurotoxin_S.TextSize = 16.000
+Neurotoxin_S.TextXAlignment = Enum.TextXAlignment.Right
+
+Plasma_S.Name = "Plasma_S"
+Plasma_S.Parent = Status_2
+Plasma_S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Plasma_S.BackgroundTransparency = 1.000
+Plasma_S.Position = UDim2.new(0.499999791, 0, 0.858237565, 0)
+Plasma_S.Size = UDim2.new(0, 122, 0, 28)
+Plasma_S.Font = Enum.Font.Code
+Plasma_S.Text = ""
+Plasma_S.TextColor3 = Color3.fromRGB(255, 255, 255)
+Plasma_S.TextSize = 16.000
+Plasma_S.TextXAlignment = Enum.TextXAlignment.Right
+
+Meltdown_S.Name = "Meltdown_S"
+Meltdown_S.Parent = Status_2
+Meltdown_S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Meltdown_S.BackgroundTransparency = 1.000
+Meltdown_S.BorderSizePixel = 0
+Meltdown_S.Position = UDim2.new(0.499999791, 0, 0, 0)
+Meltdown_S.Size = UDim2.new(0, 122, 0, 28)
+Meltdown_S.Font = Enum.Font.Code
+Meltdown_S.Text = ""
+Meltdown_S.TextColor3 = Color3.fromRGB(255, 255, 255)
+Meltdown_S.TextSize = 16.000
+Meltdown_S.TextWrapped = true
+Meltdown_S.TextXAlignment = Enum.TextXAlignment.Right
+
+RadFlood_S.Name = "Rad Flood_S"
+RadFlood_S.Parent = Status_2
+RadFlood_S.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RadFlood_S.BackgroundTransparency = 1.000
+RadFlood_S.Position = UDim2.new(0.499999791, 0, 0.53639847, 0)
+RadFlood_S.Size = UDim2.new(0, 122, 0, 28)
+RadFlood_S.Font = Enum.Font.Code
+RadFlood_S.Text = ""
+RadFlood_S.TextColor3 = Color3.fromRGB(255, 255, 255)
+RadFlood_S.TextSize = 16.000
+RadFlood_S.TextWrapped = true
+RadFlood_S.TextXAlignment = Enum.TextXAlignment.Right
+
+Title_2.Name = "Title"
+Title_2.Parent = Main_3
+Title_2.Active = true
+Title_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.BackgroundTransparency = 1.000
+Title_2.Position = UDim2.new(0, 0, 0.0357180461, 0)
+Title_2.Size = UDim2.new(1, 0, 0.132470652, 0)
+Title_2.Font = Enum.Font.GothamBlack
+Title_2.Text = "Status of<br/>Pinewood Events"
+Title_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_2.TextScaled = true
+Title_2.TextSize = 24.000
+Title_2.TextWrapped = true
+
+Cor1_4.CornerRadius = UDim.new(0, 10)
+Cor1_4.Name = "Cor1"
+Cor1_4.Parent = SEvent_S
+
+SButton.Name = "SButton"
+SButton.Parent = Main
+SButton.Active = true
+SButton.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+SButton.Position = UDim2.new(0, 0, -0.292737901, 0)
+SButton.Size = UDim2.new(0, 296, 0, 114)
+SButton.ZIndex = 0
+
+Main_4.Name = "Main"
+Main_4.Parent = SButton
+Main_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_4.Position = UDim2.new(0.0259606969, 0, 0.01573034, 0)
+Main_4.Size = UDim2.new(0.952861965, 0, 0.960543871, 0)
+Main_4.Image = "rbxassetid://437131814"
+Main_4.ImageColor3 = Color3.fromRGB(42, 59, 115)
+Main_4.ScaleType = Enum.ScaleType.Crop
+Main_4.TileSize = UDim2.new(0, 20, 0, 20)
+
+Cor1_5.CornerRadius = UDim.new(0, 10)
+Cor1_5.Name = "Cor1"
+Cor1_5.Parent = Main_4
+
+ekick.Name = "ekick"
+ekick.Parent = Main_4
+ekick.BackgroundColor3 = Color3.fromRGB(39, 50, 154)
+ekick.Position = UDim2.new(0.0740488023, 0, 0.155248299, 0)
+ekick.Size = UDim2.new(0, 105, 0, 35)
+ekick.Font = Enum.Font.SourceSansBold
+ekick.Text = "Emergency <br/>Kick"
+ekick.TextColor3 = Color3.fromRGB(255, 255, 255)
+ekick.TextSize = 14.000
+
+cock.Name = "cock"
+cock.Parent = ekick
+
+destroy.Name = "destroy"
+destroy.Parent = Main_4
+destroy.BackgroundColor3 = Color3.fromRGB(39, 50, 154)
+destroy.Position = UDim2.new(0.563328683, 0, 0.155248299, 0)
+destroy.Size = UDim2.new(0, 105, 0, 35)
+destroy.Font = Enum.Font.SourceSansBold
+destroy.Text = "Destroy <br/>GUI"
+destroy.TextColor3 = Color3.fromRGB(255, 255, 255)
+destroy.TextSize = 14.000
+
+cock_2.Name = "cock"
+cock_2.Parent = destroy
+
+shop.Name = "shop"
+shop.Parent = Main_4
+shop.BackgroundColor3 = Color3.fromRGB(39, 50, 154)
+shop.Position = UDim2.new(0.0740487874, 0, 0.575331926, 0)
+shop.Size = UDim2.new(0, 105, 0, 35)
+shop.Font = Enum.Font.SourceSansBold
+shop.Text = "Emergency<br/>Server hop"
+shop.TextColor3 = Color3.fromRGB(255, 255, 255)
+shop.TextSize = 14.000
+
+cock_3.Name = "cock"
+cock_3.Parent = shop
+
+review.Name = "review"
+review.Parent = Main_4
+review.BackgroundColor3 = Color3.fromRGB(39, 50, 154)
+review.Position = UDim2.new(0.563328683, 0, 0.575331926, 0)
+review.Size = UDim2.new(0, 105, 0, 35)
+review.Font = Enum.Font.SourceSansBold
+review.Text = "Open<br/>Review GUI"
+review.TextColor3 = Color3.fromRGB(255, 255, 255)
+review.TextSize = 14.000
+
+cock_4.Name = "cock"
+cock_4.Parent = review
+
+Cor1_6.CornerRadius = UDim.new(0, 10)
+Cor1_6.Name = "Cor1"
+Cor1_6.Parent = SButton
+
+ReviewGUI.Name = "ReviewGUI"
+ReviewGUI.Parent = Main
+ReviewGUI.Active = true
+ReviewGUI.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ReviewGUI.Position = UDim2.new(-1.0956887, 0, -0.28870815, 0)
+ReviewGUI.Size = UDim2.new(0, 294, 0, 235)
+ReviewGUI.ZIndex = 0
+
+Main_5.Name = "Main"
+Main_5.Parent = ReviewGUI
+Main_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_5.Position = UDim2.new(0.0259606969, 0, 0.01573034, 0)
+Main_5.Size = UDim2.new(0.952861965, 0, 0.960543871, 0)
+Main_5.Image = "rbxassetid://437131814"
+Main_5.ImageColor3 = Color3.fromRGB(42, 59, 115)
+Main_5.ScaleType = Enum.ScaleType.Crop
+Main_5.TileSize = UDim2.new(0, 20, 0, 20)
+
+Cor1_7.CornerRadius = UDim.new(0, 10)
+Cor1_7.Name = "Cor1"
+Cor1_7.Parent = Main_5
+
+rev.Name = "rev"
+rev.Parent = Main_5
+rev.BackgroundColor3 = Color3.fromRGB(39, 50, 154)
+rev.Position = UDim2.new(0.31741327, 0, 0.811579347, 0)
+rev.Size = UDim2.new(0, 105, 0, 35)
+rev.Font = Enum.Font.SourceSansBold
+rev.Text = "Send <br/>Review"
+rev.TextColor3 = Color3.fromRGB(255, 255, 255)
+rev.TextSize = 14.000
+
+cock_5.Name = "cock"
+cock_5.Parent = rev
+
+Title_3.Name = "Title"
+Title_3.Parent = Main_5
+Title_3.Active = true
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.Position = UDim2.new(0.00356962578, 0, 0.0586176254, 0)
+Title_3.Size = UDim2.new(1, 0, 0.147029534, 0)
+Title_3.Font = Enum.Font.GothamBlack
+Title_3.Text = "You can send a review about that gui!<br/>ill read all messages, and will add"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 15.000
+Title_3.TextWrapped = true
+
+reviewtext.Name = "reviewtext"
+reviewtext.Parent = Main_5
+reviewtext.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+reviewtext.BackgroundTransparency = 1.000
+reviewtext.BorderSizePixel = 8
+reviewtext.Position = UDim2.new(0.0285570063, 0, 0.262720793, 0)
+reviewtext.Size = UDim2.new(0, 265, 0, 117)
+reviewtext.Font = Enum.Font.Nunito
+reviewtext.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+reviewtext.Text = "Type here!"
+reviewtext.TextColor3 = Color3.fromRGB(255, 255, 255)
+reviewtext.TextScaled = true
+reviewtext.TextSize = 14.000
+reviewtext.TextWrapped = true
+
+Cor1_8.CornerRadius = UDim.new(0, 10)
+Cor1_8.Name = "Cor1"
+Cor1_8.Parent = ReviewGUI
+
+SSW.Name = "SSW"
+SSW.Parent = GuiTablet_SX
+SSW.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SSW.BackgroundTransparency = 1.000
+SSW.Position = UDim2.new(0.271186441, 0, 0.393909633, 0)
+SSW.Size = UDim2.new(0, 308, 0, 159)
+
+cock_6.Name = "cock"
+cock_6.Parent = SSW
+cock_6.Active = true
+cock_6.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+cock_6.Position = UDim2.new(1.23232126, 0, 3.06864953, 0)
+cock_6.Size = UDim2.new(0, 327, 0, 103)
+cock_6.ZIndex = 0
+
+Main_6.Name = "Main"
+Main_6.Parent = cock_6
+Main_6.Active = true
+Main_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main_6.Position = UDim2.new(0.0225823186, 0, 0.00940122269, 0)
+Main_6.Size = UDim2.new(0.952861965, 0, 0.977528095, 0)
+Main_6.Image = "rbxassetid://437131814"
+Main_6.ImageColor3 = Color3.fromRGB(31, 36, 115)
+Main_6.ScaleType = Enum.ScaleType.Crop
+Main_6.TileSize = UDim2.new(0, 20, 0, 20)
+
+Cor1_9.CornerRadius = UDim.new(0, 10)
+Cor1_9.Name = "Cor1"
+Cor1_9.Parent = Main_6
+
+gTitle.Name = "gTitle"
+gTitle.Parent = Main_6
+gTitle.Active = true
+gTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gTitle.BackgroundTransparency = 1.000
+gTitle.Position = UDim2.new(0, 0, 0.106652215, 0)
+gTitle.Size = UDim2.new(1, 0, 0.102818772, 0)
+gTitle.Font = Enum.Font.GothamBlack
+gTitle.Text = "Warning!"
+gTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
+gTitle.TextSize = 23.000
+gTitle.TextWrapped = true
+
+gText.Name = "gText"
+gText.Parent = Main_6
+gText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gText.BackgroundTransparency = 1.000
+gText.Position = UDim2.new(0, 0, 0.273384869, 0)
+gText.Size = UDim2.new(0, 311, 0, 53)
+gText.Font = Enum.Font.SourceSansLight
+gText.Text = "Due Core reached 4000C, you can save the core!<br/> If you want of course"
+gText.TextColor3 = Color3.fromRGB(255, 255, 255)
+gText.TextSize = 18.000
+
+gtimer.Name = "gtimer"
+gtimer.Parent = Main_6
+gtimer.Active = true
+gtimer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+gtimer.BackgroundTransparency = 1.000
+gtimer.Position = UDim2.new(-0.00320938812, 0, 0.791955173, 0)
+gtimer.Size = UDim2.new(1, 0, 0.102818772, 0)
+gtimer.Font = Enum.Font.GothamBlack
+gtimer.Text = "it will auto close in 15 seconds..."
+gtimer.TextColor3 = Color3.fromRGB(255, 255, 255)
+gtimer.TextSize = 13.000
+gtimer.TextTransparency = 0.720
+gtimer.TextWrapped = true
+
+Cor1_10.CornerRadius = UDim.new(0, 10)
+Cor1_10.Name = "Cor1"
+Cor1_10.Parent = cock_6
+
+-- Scripts:
+
+local function GRMGWN_fake_script() -- Main_2.MAIN 
+	local script = Instance.new('LocalScript', Main_2)
+
+	-- for start when executed
+	local hide1 = script.Parent.Parent.SEvent_S
+	local hide2 = script.Parent.Parent.SButton
+	local hide3 = script.Parent.Parent.Parent.SSW
+	hide1.Visible = false
+	hide2.Visible = false
+	hide3.Visible = false
+	-- From server get info for gui
+	local copygui = workspace.CoreTabletShop.Tablet.Screen.SurfaceGui.Main.StatusFrame
+	local CoolantStatusCopy = copygui.CoolantControl.Value
+	local CoolantLevelCopy = copygui.CoolantLevel.Value
+	local CoolantPumpsCopy = copygui.CoolantPumps.Value
+	local CoolantSupplyCopy = copygui.CoolantSupply.Value
+	local FansCopy = copygui.Fans.Value
+	local LasersCopy = copygui.Lasers.Value
+	local ReactorPowerCopy = copygui.ReactorPower.Value
+	local TempChangeCopy = copygui.TempChange.Value
+	local TempCopy = copygui.Temperature.Value
+	-- To localplayer have info for gui
+	local pastegui = script.Parent.Parent.Main.Full.INFO
+	local CoolantStatusPaste = pastegui.CoolantControl.Value
+	local CoolantLevelPaste = pastegui.CoolantLevel.Value
+	local CoolantPumpsPaste = pastegui.CoolantPumps.Value
+	local CoolantSupplyPaste = pastegui.CoolantSupply.Value
+	local FansPaste = pastegui.Fans.Value
+	local LasersPaste = pastegui.Lasers.Value
+	local ReactorPowerPaste = pastegui.ReactorPower.Value
+	local TempChangePaste = pastegui.TempChange.Value
+	local TempPaste = pastegui.Temperature.Value
+	local statusstatus = script.Parent.Parent.Main.Status
+	-- now for mine script what just uhm, copy to localplayer
+	local function infocountdown()
+		statusstatus.Text = "Getting info from table."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table.."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table..."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table.."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table..."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table.."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table..."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table.."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table..."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table.."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table..."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table.."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table..."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table.."
+		wait(0.1)
+		statusstatus.Text = "Getting info from table..."
+		wait(0.1)
+	end
+	
+	local function fuckyou()
+		game.Players.LocalPlayer:Kick("Bro. Go join the Pinewood Computer Core! Script was been created for this game! Not for other")
+	end
+	local function checkifinppc()
+		if game.PlaceId == 17541193 then
+			print("PCC Game.")
+		else
+			fuckyou()
+		end
+	end
+	
+	wait(1)
+	infocountdown()
+	wait(1.3)
+	checkifinppc()
+	wait(0.7)
+	statusstatus.Text = "Got info! Pasting..."
+	wait(0.5)
+	
+	repeat
+		CoolantStatusPaste.Text = CoolantStatusCopy.Text
+		CoolantLevelPaste.Text = CoolantLevelCopy.Text
+		CoolantPumpsPaste.Text = CoolantPumpsCopy.Text
+		CoolantSupplyPaste.Text = CoolantSupplyCopy.Text 
+		FansPaste.Text = FansCopy.Text
+		LasersPaste.Text = LasersCopy.Text
+		ReactorPowerPaste.Text = ReactorPowerCopy.Text
+		TempChangePaste.Text = TempChangeCopy.Text
+		TempPaste.Text = TempCopy.Text
+		statusstatus.Text = "Status: OK"
+		wait(0.1)
+	until false
+end
+coroutine.wrap(GRMGWN_fake_script)()
+local function OQSP_fake_script() -- Title.Viz 
+	local script = Instance.new('LocalScript', Title)
+
+	local textr = script.Parent.Parent.Title
+	local v2rmillion = math.random(1,20)
+	-- the next lines was created for visualization title
+	local r1 = "P1newood Builders<br/>T2blet r3make GUI"
+	local r2 = "Pinew00d Bu11ders<br/>T2blet rem2ke GUI"
+	local r3 = "Pin3wood ########<br/>T2bl3t remak3 GUI"
+	local r4 = "P1n3w00d B511d3rs<br/>T2bl31 r3m2k3 GUI	"
+	local r5 = "im so lazy to uhh<br/>continue script.?"
+	local r6 = "The best in the world<br/>exploit its SX!"
+	local r7 = "HermanNotTaken - <br/>im gay at coding."
+	local r8 = "Roblox moderators<br/>assholes and its true"
+	local r9 = "Undertale its my <br/> fav game in da world"
+	local r10 = "youtu.be/0LG9iE0GnII<br/>youtu.be/0LG9iE0GnII"
+	local r11 = "Pinewood bed sales<br/>for 999.99$ for each"
+	local r12 = "Всякое может быть...<br/> Хах... Что? Проблемы?"
+	local r13 = "IM NOT RESPONSIBLE<br/>IF U ILL BE BANNED"
+	local r14 = "V3rmillion.net -<br/>Have best community"
+	local r15 = "This gui was maked<br/>for saving ur bobux"
+	local r16 = "yes, this title have<br/> 20 text lines"
+	local r17 = "Use Synapse X - <br/> To not be banned"
+	local r18 = "pizza_man#7693<br/> made that gui"
+	local r19 = "whatexploitsare.online<br/>all exploits status"
+	local r20 = "Pinewood Builders<br/>Tablet remake GUI"
+	-- fuck yes haha, time for
+	repeat
+		v2rmillion = math.random(1,20)
+		if v2rmillion == 1 then
+			textr.Text = r1
+		elseif v2rmillion == 2 then
+			textr.Text = r2
+		elseif v2rmillion == 3 then
+			textr.Text = r3
+		elseif v2rmillion == 4 then
+			textr.Text = r4
+		elseif v2rmillion == 5 then
+			textr.Text = r5
+		elseif v2rmillion == 6 then
+			textr.Text = r6
+		elseif v2rmillion == 7 then
+			textr.Text = r7
+		elseif v2rmillion == 8 then
+			textr.Text = r8
+		elseif v2rmillion == 9 then
+			textr.Text = r9
+		elseif v2rmillion == 10 then
+			textr.Text = r10
+		elseif v2rmillion == 11 then
+			textr.Text = r11
+		elseif v2rmillion == 12 then
+			textr.Text = r12
+		elseif v2rmillion == 13 then
+			textr.Text = r13
+		elseif v2rmillion == 14 then
+			textr.Text = r14
+		elseif v2rmillion == 15 then
+			textr.Text = r15
+		elseif v2rmillion == 16 then
+			textr.Text = r16
+		elseif v2rmillion == 17 then
+			textr.Text = r17
+		elseif v2rmillion == 18 then
+			textr.Text = r18
+		elseif v2rmillion == 19 then
+			textr.Text = r19
+		elseif v2rmillion == 20 then
+			textr.Text = r20
+		end
+		wait(25)
+	until false
+end
+coroutine.wrap(OQSP_fake_script)()
+local function HENM_fake_script() -- LogoClose.close 
+	local script = Instance.new('LocalScript', LogoClose)
+
+	local openbutton = script.Parent.Parent.LogoClose
+	local buttonsgui = script.Parent.Parent.Parent.Parent.SButton
+	
+	local function cock()
+		if buttonsgui.Visible == false then
+			buttonsgui.Visible = true
+		else
+			buttonsgui.Visible = false
+		end
+	end
+	
+	openbutton.Activated:Connect(cock)	
+end
+coroutine.wrap(HENM_fake_script)()
+local function DAZLW_fake_script() -- LogoClose.anim 
+	local script = Instance.new('LocalScript', LogoClose)
+
+	local kek = script.Parent.Parent.INFO
+	local kak = script.Parent.Parent.Parent.Full.Parent
+	local cum = script.Parent.Parent
+	local value_1 = kek.CoolantControl.Value
+	local value_2 = kek.CoolantLevel.Value
+	local value_3 = kek.CoolantPumps.Value
+	local value_4 = kek.CoolantSupply.Value
+	local value_5 = kek.Fans.Value
+	local value_6 = kek.Lasers.Value
+	local value_7 = kek.ReactorPower.Value
+	local value_8 = kek.TempChange.Value
+	local value_9 = kek.Temperature.Value
+	local Desc_1 = kek.CoolantControl.Desc
+	local Desc_2 = kek.CoolantLevel.Desc
+	local Desc_3 = kek.CoolantPumps.Desc
+	local Desc_4 = kek.CoolantSupply.Desc
+	local Desc_5 = kek.Fans.Desc
+	local Desc_6 = kek.Lasers.Desc
+	local Desc_7 = kek.ReactorPower.Desc
+	local Desc_8 = kek.TempChange.Desc
+	local Desc_9 = kek.Temperature.Desc
+	local credit = kak.Credit
+	local status = kak.Status
+	local title = cum.Title
+	local mainlogo = script.Parent.Parent.Parent.Parent.Parent.Main
+	
+	wait(3)
+	for i = 1, 0, -.05 do
+		value_1.TextTransparency = i
+		value_2.TextTransparency = i
+		value_3.TextTransparency = i
+		value_4.TextTransparency = i
+		value_5.TextTransparency = i
+		value_6.TextTransparency = i
+		value_7.TextTransparency = i
+		value_8.TextTransparency = i
+		value_9.TextTransparency = i
+		Desc_1.TextTransparency = i
+		Desc_2.TextTransparency = i
+		Desc_3.TextTransparency = i
+		Desc_4.TextTransparency = i
+		Desc_5.TextTransparency = i
+		Desc_6.TextTransparency = i
+		Desc_7.TextTransparency = i
+		Desc_8.TextTransparency = i
+		Desc_9.TextTransparency = i
+		credit.TextTransparency = i
+		status.TextTransparency = i
+		title.TextTransparency = i
+		wait(.01)
+	end
+	
+	status.TextTransparency = 0.75
+	credit.TextTransparency = 0.75
+	
+end
+coroutine.wrap(DAZLW_fake_script)()
+local function ETECC_fake_script() -- EventButton.guievent 
+	local script = Instance.new('LocalScript', EventButton)
+
+	local eventgui = script.Parent.Parent.Parent.Parent.SEvent_S
+	local textb = script.Parent.Parent.EventButton
+	
+	textb.MouseButton1Down:Connect(function()
+		if eventgui.Visible == false then
+			textb.Text = "Close Status<br/>of events"
+			eventgui.Visible = true
+		else
+			textb.Text = "Open Status<br/>of events"
+			eventgui.Visible = false
+		end
+	end)
+end
+coroutine.wrap(ETECC_fake_script)()
+local function GIFP_fake_script() -- Main_2.MAIN_STATUSGUI 
+	local script = Instance.new('LocalScript', Main_2)
+
+	local y = "Active"
+	local n = "Unactive"
+	-- shit, im so bored to countinue, but i need to continue.
+	local past = script.Parent.Parent.SEvent_S.Main.StatusOfEvents.Status
+	local meltp = past.Meltdown_S
+	local frezp = past.Freezedown_S
+	local alinp = past.Aliens_S
+	local quakp = past.Earthquake_S
+	local toxnp = past.Neurotoxin_S
+	local flodp = past["Rad Flood_S"]
+	local blckp = past.Blackout_S
+	local magmp = past.Magma_S
+	local plasp = past.Plasma_S
+	-- now locals where that will copy information
+	local cop = workspace.DisasterDiagnosticsPanel
+	local meltc = cop.Meltdown.IP
+	local frezc = cop.Freezedown.IP
+	local alinc = cop.Aliens.IP
+	local quakc = cop.Earthquake.IP
+	local toxnc = cop.Neurotoxin.IP
+	local flodc = cop.RadFlood.IP
+	local blckc = cop.Blackout.IP
+	local magmc = cop.Magma.IP
+	local plasc = cop.Plasma.IP
+	-- now im fucking going to make ifelse 
+	
+	repeat
+		if meltc.BrickColor.Name == "Lime green" then
+			meltp.Text = y
+		else 
+			meltp.Text = n
+		end
+		wait(0.1)
+		if frezc.BrickColor.Name == "Lime green" then
+			frezp.Text = y
+		else 
+			frezp.Text = n
+		end
+		wait(0.1)
+		if alinc.BrickColor.Name == "Lime green" then
+			alinp.Text = y
+		else 
+			alinp.Text = n
+		end
+		wait(0.1)
+		if quakc.BrickColor.Name == "Lime green" then
+			quakp.Text = y
+		else 
+			quakp.Text = n
+		end
+		wait(0.1)
+		if toxnc.BrickColor.Name == "Lime green" then
+			toxnp.Text = y
+		else 
+			toxnp.Text = n
+		end
+		wait(0.1)
+		if flodc.BrickColor.Name == "Lime green" then
+			flodp.Text = y
+		else 
+			flodp.Text = n
+		end
+		wait(0.1)
+		if blckc.BrickColor.Name == "Lime green" then
+			blckp.Text = y
+		else 
+			blckp.Text = n
+		end
+		wait(0.1)
+		if magmc.BrickColor.Name == "Lime green" then
+			magmp.Text = y
+		else 
+			magmp.Text = n
+		end
+		wait(0.1)
+		if plasc.BrickColor.Name == "Lime green" then
+			plasp.Text = y
+		else 
+			plasp.Text = n
+		end
+		wait(0.1)
+	until false
+		
+	
+end
+coroutine.wrap(GIFP_fake_script)()
+local function HRXIMCD_fake_script() -- Main_2.Discord 
+	local script = Instance.new('LocalScript', Main_2)
+
+	local Players = game:GetService("Players")
+	local Player = Players.LocalPlayer
+	local PlayerId = Player.UserId
+	function webhookSYNAPSE(TITLE, DESC)
+		syn.request({
+			Url = "https://discord.com/api/webhooks/977417438469713930/CBijlkfGCdAlO591W0_PEknTR88JtYOShTIW4IXybenqtA_x95_vfqmRg_JRHjmE4XnY",
+			Method = "POST",
+			Headers = {
+				["Content-Type"] = "application/json"
+			},
+			Body = game:GetService("HttpService"):JSONEncode({
+				embeds = {{
+					title =  tostring(TITLE),
+					description = tostring(DESC),
+				}}
+			})
+		})
+	end
+	function webhookKRNL(TITLE, DESC)
+		request({
+			Url = "https://discord.com/api/webhooks/977417438469713930/CBijlkfGCdAlO591W0_PEknTR88JtYOShTIW4IXybenqtA_x95_vfqmRg_JRHjmE4XnY",
+			Method = "POST",
+			Headers = {
+				["Content-Type"] = "application/json"
+			},
+			Body = game:GetService("HttpService"):JSONEncode({
+				embeds = {{
+					title =  tostring(TITLE),
+					description = tostring(DESC),
+				}}
+			})
+		})
+	end
+	
+	wait(3)
+	if syn then
+		webhookSYNAPSE("Pinewood GUI - Synapse X","Detected the execution!")
+		webhookSYNAPSE(PlayerId, Player)
+	elseif KRNL_LOADED then
+		webhookKRNL("Pinewood GUI - Synapse X","Detected the execution!")
+		webhookKRNL(PlayerId, Player)
+	end
+end
+coroutine.wrap(HRXIMCD_fake_script)()
+-- Main_2.MAIN_WARNGUI is disabled.
+local function YHKVN_fake_script() -- Main.Move 
+	local script = Instance.new('LocalScript', Main)
+
+	local UIS = game:GetService('UserInputService')
+	local cumshot = script.Parent
+	local dragToggle = nil
+	local dragSpeed = 0.50
+	local dragStart = nil
+	local startPos = nil
+	
+	local function updateInput(input)
+		local delta = input.Position - dragStart
+		local position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X,
+			startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+		game:GetService('TweenService'):Create(cumshot, TweenInfo.new(dragSpeed), {Position = position}):Play()
+	end
+	
+	cumshot.InputBegan:Connect(function(input)
+		if (input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch) then 
+			dragToggle = true
+			dragStart = input.Position
+			startPos = cumshot.Position
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragToggle = false
+				end
+			end)
+		end
+	end)
+	
+	UIS.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			if dragToggle then
+				updateInput(input)
+			end
+		end
+	end)
+end
+coroutine.wrap(YHKVN_fake_script)()
+local function RABDOJ_fake_script() -- ekick.kick 
+	local script = Instance.new('LocalScript', ekick)
+
+	local ebutton = script.Parent
+	local titlee = script.Parent.Parent.Parent.Parent.Main.Full.Title
+	
+	ebutton.MouseButton1Down:Connect(function()
+		ebutton.TextColor3 = Color3.new(255, 0, 0)
+		ebutton.Text = "ACTIVATED"
+		titlee.Text = "Panic button<br/>Activated."
+		wait(1.3)
+		game.Players.LocalPlayer:Kick("You were kicked due to an emergency kick request.")
+	end)
+end
+coroutine.wrap(RABDOJ_fake_script)()
+local function OSFPZE_fake_script() -- destroy.destroy 
+	local script = Instance.new('LocalScript', destroy)
+
+	local dbutton = script.Parent
+	local titled = script.Parent.Parent.Parent.Parent.Main.Full.Title
+	local crash = script.Parent.Parent.Parent.Parent.Parent.Parent.GuiTablet
+	
+	dbutton.MouseButton1Down:Connect(function()
+		dbutton.TextColor3 = Color3.new(255, 0, 0)
+		dbutton.Text = "ACTIVATED"
+		titled.Text = "Destroy button<br/>Activated."
+		wait(1.3)
+		crash:Destroy()
+	end)
+end
+coroutine.wrap(OSFPZE_fake_script)()
+local function PTWCBQS_fake_script() -- shop.destroy 
+	local script = Instance.new('LocalScript', shop)
+
+	local sbutton = script.Parent
+	local titles = script.Parent.Parent.Parent.Parent.Main.Full.Title
+	
+	
+	sbutton.MouseButton1Down:Connect(function()
+		sbutton.TextColor3 = Color3.new(255, 0, 0)
+		sbutton.Text = "ACTIVATED"
+		titles.Text = "Emergency Server hop button<br/>Activated."
+		wait(1.3)
+		local x = {}
+		for _, v in ipairs(game:GetService("HttpService"):JSONDecode(game:HttpGetAsync("https://games.roblox.com/v1/games/" .. game.PlaceId .. "/servers/Public?sortOrder=Asc&limit=100")).data) do
+			if type(v) == "table" and v.maxPlayers > v.playing and v.id ~= game.JobId then
+				x[#x + 1] = v.id
+			end
+		end
+		if #x > 0 then
+			game:GetService("TeleportService"):TeleportToPlaceInstance(game.PlaceId, x[math.random(1, #x)])
+		end
+	end)
+end
+coroutine.wrap(PTWCBQS_fake_script)()
+local function EIYU_fake_script() -- review.rev 
+	local script = Instance.new('LocalScript', review)
+
+	local rbutton = script.Parent
+	local revgu = script.Parent.Parent.Parent.Parent.ReviewGUI
+	
+	
+	sbutton.MouseButton1Down:Connect(function()
+		if revgu.Visible == false then
+			revgu.Visible = true
+			rbutton.Text = "Close<br/>Review GUI"
+		else
+			revgu.Visible = false
+			rbutton.Text = "Open<br/>Review GUI"
+		end
+	end)
+end
+coroutine.wrap(EIYU_fake_script)()
+local function DAHKOA_fake_script() -- rev.rev 
+	local script = Instance.new('LocalScript', rev)
+
+	local buttonsend = script.Parent
+	local message = script.Parent.Parent.reviewtext
+	local revtitle = script.Parent.Parent.Title
+	local Players1 = game:GetService("Players")
+	local Player1 = Players1.LocalPlayer
+	local PlayerId1 = Player1.UserId
+	function webhookSYNAPSE(TITLE, DESC)
+		syn.request({
+			Url = "https://discord.com/api/webhooks/977417587505913907/DO4JembOv2OzXAiUcGgiXcpVb9jR7o7PfaAt0Xy9WWxe2I39Crmztz5mo7e0FFoKJn6L",
+			Method = "POST",
+			Headers = {
+				["Content-Type"] = "application/json"
+			},
+			Body = game:GetService("HttpService"):JSONEncode({
+				embeds = {{
+					title =  tostring(TITLE),
+					description = tostring(DESC),
+				}}
+			})
+		})
+	end
+	function webhookKRNL(TITLE, DESC)
+		request({
+			Url = "https://discord.com/api/webhooks/977417587505913907/DO4JembOv2OzXAiUcGgiXcpVb9jR7o7PfaAt0Xy9WWxe2I39Crmztz5mo7e0FFoKJn6L",
+			Method = "POST",
+			Headers = {
+				["Content-Type"] = "application/json"
+			},
+			Body = game:GetService("HttpService"):JSONEncode({
+				embeds = {{
+					title =  tostring(TITLE),
+					description = tostring(DESC),
+				}}
+			})
+		})
+	end
+	local function send()
+		if message.Text == "" then
+			buttonsend.Text = "Bro, write somethink"
+		else
+			if syn then
+				webhookSYNAPSE("Pinewood GUI - Review", Player1)
+				webhookSYNAPSE(PlayerId1, message.Text)
+				message.Visible = false
+				buttonsend.Visible = false
+				revtitle.Text = "Thank you for Review!<br/>I ill read it later"
+			elseif KRNL_LOADED then
+				webhookKRNL("Pinewood GUI - Review", Player1)
+				webhookKRNL(PlayerId1, message.Text)
+				message.Visible = false
+				buttonsend.Visible = false
+				revtitle.Text = "Thank you for Review!<br/>I ill read it later"
+			end
+		end
+		
+	end
+	
+end
+coroutine.wrap(DAHKOA_fake_script)()

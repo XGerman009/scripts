@@ -93,14 +93,6 @@ local cock_5 = Instance.new("UICorner")
 local Title_3 = Instance.new("TextLabel")
 local reviewtext = Instance.new("TextBox")
 local Cor1_8 = Instance.new("UICorner")
-local SSW = Instance.new("Frame")
-local cock_6 = Instance.new("Frame")
-local Main_6 = Instance.new("ImageLabel")
-local Cor1_9 = Instance.new("UICorner")
-local gTitle = Instance.new("TextLabel")
-local gText = Instance.new("TextLabel")
-local gtimer = Instance.new("TextLabel")
-local Cor1_10 = Instance.new("UICorner")
 Value.RichText = true
 Value_2.RichText = true
 Value_6.RichText = true
@@ -120,8 +112,6 @@ Title_3.RichText = true
 review.RichText = true
 rev.RichText = true
 reviewtext.RichText = true
-gTitle.RichText = true
-
 --Properties:
 
 GuiTablet_SX.Name = "GuiTablet_SX"
@@ -986,91 +976,17 @@ Cor1_8.CornerRadius = UDim.new(0, 10)
 Cor1_8.Name = "Cor1"
 Cor1_8.Parent = ReviewGUI
 
-SSW.Name = "SSW"
-SSW.Parent = GuiTablet_SX
-SSW.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SSW.BackgroundTransparency = 1.000
-SSW.Position = UDim2.new(0.271186441, 0, 0.393909633, 0)
-SSW.Size = UDim2.new(0, 308, 0, 159)
-
-cock_6.Name = "cock"
-cock_6.Parent = SSW
-cock_6.Active = true
-cock_6.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-cock_6.Position = UDim2.new(1.23232126, 0, 3.06864953, 0)
-cock_6.Size = UDim2.new(0, 327, 0, 103)
-cock_6.ZIndex = 0
-
-Main_6.Name = "Main"
-Main_6.Parent = cock_6
-Main_6.Active = true
-Main_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Main_6.Position = UDim2.new(0.0225823186, 0, 0.00940122269, 0)
-Main_6.Size = UDim2.new(0.952861965, 0, 0.977528095, 0)
-Main_6.Image = "rbxassetid://437131814"
-Main_6.ImageColor3 = Color3.fromRGB(31, 36, 115)
-Main_6.ScaleType = Enum.ScaleType.Crop
-Main_6.TileSize = UDim2.new(0, 20, 0, 20)
-
-Cor1_9.CornerRadius = UDim.new(0, 10)
-Cor1_9.Name = "Cor1"
-Cor1_9.Parent = Main_6
-
-gTitle.Name = "gTitle"
-gTitle.Parent = Main_6
-gTitle.Active = true
-gTitle.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-gTitle.BackgroundTransparency = 1.000
-gTitle.Position = UDim2.new(0, 0, 0.106652215, 0)
-gTitle.Size = UDim2.new(1, 0, 0.102818772, 0)
-gTitle.Font = Enum.Font.GothamBlack
-gTitle.Text = "Warning!"
-gTitle.TextColor3 = Color3.fromRGB(255, 255, 255)
-gTitle.TextSize = 23.000
-gTitle.TextWrapped = true
-
-gText.Name = "gText"
-gText.Parent = Main_6
-gText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-gText.BackgroundTransparency = 1.000
-gText.Position = UDim2.new(0, 0, 0.273384869, 0)
-gText.Size = UDim2.new(0, 311, 0, 53)
-gText.Font = Enum.Font.SourceSansLight
-gText.Text = "Due Core reached 4000C, you can save the core!<br/> If you want of course"
-gText.TextColor3 = Color3.fromRGB(255, 255, 255)
-gText.TextSize = 18.000
-
-gtimer.Name = "gtimer"
-gtimer.Parent = Main_6
-gtimer.Active = true
-gtimer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-gtimer.BackgroundTransparency = 1.000
-gtimer.Position = UDim2.new(-0.00320938812, 0, 0.791955173, 0)
-gtimer.Size = UDim2.new(1, 0, 0.102818772, 0)
-gtimer.Font = Enum.Font.GothamBlack
-gtimer.Text = "it will auto close in 15 seconds..."
-gtimer.TextColor3 = Color3.fromRGB(255, 255, 255)
-gtimer.TextSize = 13.000
-gtimer.TextTransparency = 0.720
-gtimer.TextWrapped = true
-
-Cor1_10.CornerRadius = UDim.new(0, 10)
-Cor1_10.Name = "Cor1"
-Cor1_10.Parent = cock_6
-
 -- Scripts:
 
-local function HWJJVB_fake_script() -- Main_2.MAIN 
+local function IRLUL_fake_script() -- Main_2.MAIN 
 	local script = Instance.new('LocalScript', Main_2)
 
 	-- for start when executed
 	local hide1 = script.Parent.Parent.SEvent_S
 	local hide2 = script.Parent.Parent.SButton
-	local hide3 = script.Parent.Parent.Parent.SSW
 	local hide4 = script.Parent.Parent.ReviewGUI
 	hide1.Visible = false
 	hide2.Visible = false
-	hide3.Visible = false
 	hide4.Visible = false
 	-- From server get info for gui
 	local copygui = workspace.CoreTabletShop.Tablet.Screen.SurfaceGui.Main.StatusFrame
@@ -1174,8 +1090,8 @@ local function HWJJVB_fake_script() -- Main_2.MAIN
 		wait(0.1)
 	until false
 end
-coroutine.wrap(HWJJVB_fake_script)()
-local function ZOXPCQB_fake_script() -- Title.Viz 
+coroutine.wrap(IRLUL_fake_script)()
+local function VFKA_fake_script() -- Title.Viz 
 	local script = Instance.new('LocalScript', Title)
 
 	local textr = script.Parent.Parent.Title
@@ -1248,8 +1164,8 @@ local function ZOXPCQB_fake_script() -- Title.Viz
 		wait(25)
 	until false
 end
-coroutine.wrap(ZOXPCQB_fake_script)()
-local function ZNEWX_fake_script() -- LogoClose.close 
+coroutine.wrap(VFKA_fake_script)()
+local function YOHCE_fake_script() -- LogoClose.close 
 	local script = Instance.new('LocalScript', LogoClose)
 
 	local openbutton = script.Parent.Parent.LogoClose
@@ -1265,8 +1181,8 @@ local function ZNEWX_fake_script() -- LogoClose.close
 	
 	openbutton.Activated:Connect(cock)	
 end
-coroutine.wrap(ZNEWX_fake_script)()
-local function NXLL_fake_script() -- LogoClose.anim 
+coroutine.wrap(YOHCE_fake_script)()
+local function DJJCWGH_fake_script() -- LogoClose.anim 
 	local script = Instance.new('LocalScript', LogoClose)
 
 	local kek = script.Parent.Parent.INFO
@@ -1325,8 +1241,8 @@ local function NXLL_fake_script() -- LogoClose.anim
 	credit.TextTransparency = 0.75
 	
 end
-coroutine.wrap(NXLL_fake_script)()
-local function UGUABE_fake_script() -- EventButton.guievent 
+coroutine.wrap(DJJCWGH_fake_script)()
+local function DVRZ_fake_script() -- EventButton.guievent 
 	local script = Instance.new('LocalScript', EventButton)
 
 	local eventgui = script.Parent.Parent.Parent.Parent.SEvent_S
@@ -1342,8 +1258,8 @@ local function UGUABE_fake_script() -- EventButton.guievent
 		end
 	end)
 end
-coroutine.wrap(UGUABE_fake_script)()
-local function TUAVH_fake_script() -- Main_2.MAIN_STATUSGUI 
+coroutine.wrap(DVRZ_fake_script)()
+local function TINWTVO_fake_script() -- Main_2.MAIN_STATUSGUI 
 	local script = Instance.new('LocalScript', Main_2)
 
 	local y = "Active"
@@ -1431,8 +1347,8 @@ local function TUAVH_fake_script() -- Main_2.MAIN_STATUSGUI
 		
 	
 end
-coroutine.wrap(TUAVH_fake_script)()
-local function ZFLT_fake_script() -- Main_2.Discord 
+coroutine.wrap(TINWTVO_fake_script)()
+local function FIJY_fake_script() -- Main_2.Discord 
 	local script = Instance.new('LocalScript', Main_2)
 
 	local Players = game:GetService("Players")
@@ -1444,7 +1360,7 @@ local function ZFLT_fake_script() -- Main_2.Discord
 	local revtit = rbg.Main.Title
 	function webhookSYNAPSE(TITLE, DESC)
 		syn.request({
-			Url = "https://discord.com/api/webhooks/977417438469713930/CBijlkfGCdAlO591W0_PEknTR88JtYOShTIW4IXybenqtA_x95_vfqmRg_JRHjmE4XnY",
+			Url = "https://discord.com/api/webhooks/977788410142019584/X9dNX2DmP8RG5Zc4OYU3GvXI-O7_JnhibumTohfGbhCMnxBB9b54poFYHyDmBdwX1m37",
 			Method = "POST",
 			Headers = {
 				["Content-Type"] = "application/json"
@@ -1459,7 +1375,7 @@ local function ZFLT_fake_script() -- Main_2.Discord
 	end
 	function webhookKRNL(TITLE, DESC)
 		request({
-			Url = "https://discord.com/api/webhooks/977417438469713930/CBijlkfGCdAlO591W0_PEknTR88JtYOShTIW4IXybenqtA_x95_vfqmRg_JRHjmE4XnY",
+			Url = "https://discord.com/api/webhooks/977788616212361276/eAK2ZOZiWJeq0BnhVraQ2Jw3GdDFsmwGvau7TWe7dqalG_cb0ilnG346voKTzOyib3X-",
 			Method = "POST",
 			Headers = {
 				["Content-Type"] = "application/json"
@@ -1487,20 +1403,19 @@ local function ZFLT_fake_script() -- Main_2.Discord
 			wait(0.5)
 			revbutton.Visible = false
 			revtextmsg.Visible = false
-			revtit.Text = "Thanks for sending a review! I Will read your review later!"
+			revtit.Text = "Thanks for sending a review!<br/>I Will read your review later!"
 		elseif KRNL_LOADED then
 			webhookKRNL("Pinewood GUI - KRNL", "New review!")
-			webhooLSYNAPSE(Player, revtextmsg.Text)
+			webhooSYNAPSE(Player, revtextmsg.Text)
 			wait(0.5)
 			revbutton.Visible = false
 			revtextmsg.Visible = false
-			revtit.Text = "Thanks for sending a review! I Will read your review later!"
+			revtit.Text = "Thanks for sending a review!<br/>I Will read your review later!"
 		end
 	end)
 end
-coroutine.wrap(ZFLT_fake_script)()
--- Main_2.MAIN_WARNGUI is disabled.
-local function MZGAAK_fake_script() -- Main.Move 
+coroutine.wrap(FIJY_fake_script)()
+local function UTLNU_fake_script() -- Main.Move 
 	local script = Instance.new('LocalScript', Main)
 
 	local UIS = game:GetService('UserInputService')
@@ -1538,8 +1453,8 @@ local function MZGAAK_fake_script() -- Main.Move
 		end
 	end)
 end
-coroutine.wrap(MZGAAK_fake_script)()
-local function CWEM_fake_script() -- ekick.kick 
+coroutine.wrap(UTLNU_fake_script)()
+local function WGIU_fake_script() -- ekick.kick 
 	local script = Instance.new('LocalScript', ekick)
 
 	local ebutton = script.Parent
@@ -1553,8 +1468,8 @@ local function CWEM_fake_script() -- ekick.kick
 		game.Players.LocalPlayer:Kick("You were kicked due to an emergency kick request.")
 	end)
 end
-coroutine.wrap(CWEM_fake_script)()
-local function GKER_fake_script() -- destroy.destroy 
+coroutine.wrap(WGIU_fake_script)()
+local function IOJW_fake_script() -- destroy.destroy 
 	local script = Instance.new('LocalScript', destroy)
 
 	local dbutton = script.Parent
@@ -1569,8 +1484,8 @@ local function GKER_fake_script() -- destroy.destroy
 		crash:Destroy()
 	end)
 end
-coroutine.wrap(GKER_fake_script)()
-local function LEEPKV_fake_script() -- shop.destroy 
+coroutine.wrap(IOJW_fake_script)()
+local function YNRBQBF_fake_script() -- shop.destroy 
 	local script = Instance.new('LocalScript', shop)
 
 	local sbutton = script.Parent
@@ -1593,8 +1508,8 @@ local function LEEPKV_fake_script() -- shop.destroy
 		end
 	end)
 end
-coroutine.wrap(LEEPKV_fake_script)()
-local function JHOTU_fake_script() -- review.rev 
+coroutine.wrap(YNRBQBF_fake_script)()
+local function JOCQE_fake_script() -- review.rev 
 	local script = Instance.new('LocalScript', review)
 
 	local rbutton = script.Parent
@@ -1611,4 +1526,4 @@ local function JHOTU_fake_script() -- review.rev
 		end
 	end)
 end
-coroutine.wrap(JHOTU_fake_script)()
+coroutine.wrap(JOCQE_fake_script)()

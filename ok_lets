@@ -1,0 +1,3 @@
+if _G.GlobalCQ.enabled then
+  return "rzmAIP1rlUkl0ZbkEVF2UfVemB8SzNN99iLLHElu6LpMBE46wjeyxA=="
+end

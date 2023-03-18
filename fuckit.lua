@@ -1,0 +1,3 @@
+if _G.GlobalCQ.debug then
+  return "Vm0xd1IyRnRWa2RYV0d4WFlteEtWMWxVUmt0Vk1XeDBaRWhrYUZKc2JETlhhMmgzVlVaV1ZVMUVhejA9"
+end

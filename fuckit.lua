@@ -1,3 +1,3 @@
 if _G.GlobalCQ.debug then
-  return "Vm0xd1IyRnRWa2RYV0d4WFlteEtWMWxVUmt0Vk1XeDBaRWhrYUZKc2JETlhhMmgzVlVaV1ZVMUVhejA9"
+  return "/WWhEos41WYblcGzYwoqftOwyzFetqh8J+lYpSF+8ug="
 end

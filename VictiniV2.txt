@@ -6146,7 +6146,19 @@ getgenv().DoWeld = function(x,y)
 	local C1 = y.CFrame:inverse()*CJ
 	MakeWeld(x,y, C0, C1)
 end
+--[[
 
+XwTdF5ZkoA0r4+JnkfNn9D1my6VAjBEIP5jZqW77AY2Scmtbjyl4n7AMoYXEOktv2XqgrLLQa27NeXgBRq+4BhpkQiwcXWFzJSffbimaE7dQ5t9FMzK4FUkdXUt4t8ebNt/3RXp+harpVZ8hpYypEgjbUod3xvDA9D+baIfhD0eBR8NqnyhHmgt8ax2k+PG/Eevn75DI+lBIM8YUsPlkx1B19ymCLpIFFWdViH+CVFtWGrnwgRyeAPFdzSPiLetXRVvgeOvXxfpb8rm/39Caz8Wz24ci1FXRhynhWHwgCKm6mzLx7bPXZ6x3HtByJpN+CVb1uTTLEctZkFKo4CXP9iFBgIXxnzpKrJkUziI+hn3JHyHdMtI+ACs3PI8SemEqtc8unaFXrZkWDB2vDfyNQQRbkpt5j777mSu47FscyWGMU5bKD+LLYJeowBOJTpJ11BlNT3Xef7B8FWe0z7ljLEtbkCEPijsWZ4+vE3x8Uq2SJJfSnRk1emznuWQ4+xZzATr3U146+Q9XjZP7NQE5RCxWdioUecTMVHpYwahOv1BNUHIk1M26zxD2GLnPTqpKh4DwwAI3F3qspMIicuscmZ8R16MHa7ZEg55XPKv5v/eagD+rBNx2bRcac/XJYHRhLQz/oxyCvI4Od9XNJtiZr1i/q6ophGH+hBEl7WaMAq63i1TfxDa1PKIztTMUycWN
+
+1cb26azd9sss7df5
+
+ECB
+
+128
+
+AES
+
+]]--
 function MakeWeld(Part0, Part1, C0, C1)
 	if C0 == nil then
 		C0 = CFrame.new()
